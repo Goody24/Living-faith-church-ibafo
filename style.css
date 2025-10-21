@@ -1,0 +1,503 @@
+/* ===============================
+   GLOBAL STYLES & VARIABLES
+=============================== */
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --red: #b00000;
+  --white: #ffffff;
+  --gray: #f5f5f5;
+  --dark: #111;
+  --transition: 0.4s ease-in-out;
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--white);
+  color: var(--dark);
+  overflow-x: hidden;
+}
+
+/* ===============================
+   NAVBAR
+=============================== */
+.navbar {
+  background: var(--red);
+  color: var(--white);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logo img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+nav a:hover {
+  color: #ffdddd;
+}
+
+.btn-outline,
+.btn-outlines,
+.btn-primary {
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--red);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: #800000;
+}
+
+.btn-outline {
+  background: var(--red);
+  color: var(--white);
+}
+
+.btn-outlines {
+  background: var(--white);
+  color: var(--red);
+}
+
+/* ===============================
+   HERO SECTION
+=============================== */
+.hero {
+  height: 100vh;
+  background: url("banner.jpeg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  animation: fadeSlide 1.2s ease;
+}
+
+.hero-logo {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero span {
+  color: #ffcccc;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* ===============================
+   ABOUT SECTION
+=============================== */
+#about {
+  padding: 80px 0;
+  background: #fff;
+}
+
+#about .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-block {
+  padding: 60px 40px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.2s ease, transform 1.2s ease, box-shadow 0.3s ease;
+}
+
+.about-block:nth-child(2n) {
+  background: #fff5f5;
+}
+
+.about-block.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(176, 0, 0, 0.1);
+}
+
+.about-block h2 {
+  color: var(--red);
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  border-left: 5px solid var(--red);
+  padding-left: 12px;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+.about-block p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #333;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+
+.about-block ul {
+  list-style: none;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.about-block ul li {
+  background: #fff;
+  margin: 10px 0;
+  padding: 12px 18px;
+  border-left: 4px solid var(--red);
+  border-radius: 6px;
+  color: #444;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  transition: var(--transition);
+}
+
+.about-block ul li:hover {
+  background: #ffeaea;
+  transform: translateX(5px);
+}
+
+.bible-verse {
+  background: #fff4f4;
+  font-style: italic;
+  border-left: 5px solid var(--red);
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  color: #444;
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+/* ===============================
+   GENERAL SECTIONS
+=============================== */
+.section {
+  padding: 6rem 2rem;
+  text-align: center;
+  background: var(--gray);
+}
+
+.section:nth-child(even) {
+  background: var(--white);
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: var(--red);
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 2rem;
+}
+
+.card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ===============================
+   GALLERY
+=============================== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ===============================
+   FULLSCREEN LIGHTBOX
+=============================== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 2000;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.lightbox.show {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.2);
+  transition: transform 0.4s ease, opacity 0.3s ease;
+  cursor: zoom-out;
+}
+
+.lightbox-img.fade {
+  opacity: 0;
+}
+
+.lightbox-img:hover {
+  transform: scale(1.02);
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 30px;
+  right: 45px;
+  color: #fff;
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 3000;
+  transition: color 0.3s;
+}
+
+.close-lightbox:hover {
+  color: var(--red);
+}
+
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px 18px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  transition: background 0.3s, color 0.3s;
+  z-index: 3000;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--red);
+}
+
+.lightbox-prev { left: 40px; }
+.lightbox-next { right: 40px; }
+
+.lightbox-caption {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 1.1rem;
+  background: rgba(0,0,0,0.4);
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox-caption.fade {
+  opacity: 0;
+}
+
+/* ===============================
+   CONTACT & FOOTER
+=============================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.75rem;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+}
+
+button {
+  cursor: pointer;
+}
+
+.muted {
+  margin-top: 1rem;
+  color: #777;
+}
+
+footer {
+  background: var(--red);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem;
+}
+
+footer img {
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* ===============================
+   ANIMATIONS
+=============================== */
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+=============================== */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: var(--red);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
