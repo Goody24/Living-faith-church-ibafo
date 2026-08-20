@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%" aria-label="Living Faith Church Ibafo Seal Badge">
+  <defs>
+    <!-- Gold Gradients -->
+    <linearGradient id="sealGoldOuter" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#846219" />
+      <stop offset="25%" stop-color="#D4AF37" />
+      <stop offset="50%" stop-color="#FFF3A8" />
+      <stop offset="75%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#5E430D" />
+    </linearGradient>
+    <linearGradient id="sealGoldInner" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#735118" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#FFFBEB" />
+    </linearGradient>
+
+    <!-- Flame Gradients -->
+    <linearGradient id="sealFlameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#8B0000" />
+      <stop offset="35%" stop-color="#C8102E" />
+      <stop offset="75%" stop-color="#E61E14" />
+      <stop offset="100%" stop-color="#FF5722" />
+    </linearGradient>
+    <linearGradient id="sealFlameCore" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#E61E14" />
+      <stop offset="50%" stop-color="#FF9900" />
+      <stop offset="100%" stop-color="#FFE600" />
+    </linearGradient>
+
+    <filter id="sealShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <g id="church-seal" filter="url(#sealShadow)">
+    <!-- Outer Gold Ring -->
+    <circle cx="250" cy="250" r="240" fill="url(#sealGoldOuter)" stroke="#4A3408" stroke-width="4" />
+    
+    <!-- White Content Circle -->
+    <circle cx="250" cy="250" r="226" fill="#FFFFFF" stroke="#846219" stroke-width="2.5" />
+    
+    <!-- Deep Crimson Navy Circular Band -->
+    <circle cx="250" cy="250" r="222" fill="#8B0000" />
+    <circle cx="250" cy="250" r="162" fill="#FFFFFF" stroke="url(#sealGoldInner)" stroke-width="3" />
+
+    <!-- Arched Text on Circular Ring -->
+    <!-- Top Arc: LIVING FAITH CHURCH -->
+    <path id="topTextArc" d="M 58 250 A 192 192 0 0 1 442 250" fill="none" />
+    <text font-family="'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="22" fill="#FFFFFF" letter-spacing="3.5">
+      <textPath href="#topTextArc" startOffset="50%" text-anchor="middle">
+        LIVING FAITH CHURCH
+      </textPath>
+    </text>
+
+    <!-- Bottom Arc: WINNERS CHAPEL • IBAFO -->
+    <path id="bottomTextArc" d="M 442 250 A 192 192 0 0 1 58 250" fill="none" />
+    <text font-family="'Montserrat', 'Arial Black', sans-serif" font-weight="800" font-size="18.5" fill="#FDE047" letter-spacing="3">
+      <textPath href="#bottomTextArc" startOffset="50%" text-anchor="middle">
+        ★ WINNERS CHAPEL • IBAFO ★
+      </textPath>
+    </text>
+
+    <!-- Inner Core Crest (Scaled to fit within r=160 circle) -->
+    <g id="inner-crest" transform="translate(100, 100) scale(0.6)">
+      <!-- Holy Fire -->
+      <path d="M 162 178 C 152 142, 132 118, 134 88 C 136 62, 158 52, 172 66 C 184 78, 196 98, 204 112 C 210 88, 222 45, 238 22 C 245 12, 255 12, 262 22 C 278 45, 290 88, 296 112 C 304 98, 316 78, 328 66 C 342 52, 364 62, 366 88 C 368 118, 348 142, 338 178 C 290 162, 210 162, 162 178 Z"
+            fill="url(#sealFlameGrad)" stroke="#680000" stroke-width="2.5" />
+      <path d="M 188 170 C 182 146, 168 128, 170 110 C 172 96, 182 88, 190 98 C 200 110, 210 126, 222 135 C 228 108, 238 65, 250 42 C 262 65, 272 108, 278 135 C 290 126, 300 110, 310 98 C 318 88, 328 96, 330 110 C 332 128, 318 146, 312 170 Z"
+            fill="url(#sealFlameCore)" />
+
+      <!-- Globe -->
+      <ellipse cx="250" cy="305" rx="228" ry="122" fill="#FFFFFF" stroke="#111111" stroke-width="8" />
+      <ellipse cx="250" cy="305" rx="228" ry="76" fill="none" stroke="#151515" stroke-width="4.5" />
+      <ellipse cx="250" cy="305" rx="228" ry="32" fill="none" stroke="#151515" stroke-width="4" />
+      <line x1="22" y1="305" x2="478" y2="305" stroke="#151515" stroke-width="5" />
+      <line x1="250" y1="183" x2="250" y2="427" stroke="#151515" stroke-width="4.5" />
+      <path d="M 250 183 C 125 183, 48 238, 48 305 C 48 372, 125 427, 250 427" fill="none" stroke="#151515" stroke-width="4.5" />
+      <path d="M 250 183 C 375 183, 452 238, 452 305 C 452 372, 375 427, 250 427" fill="none" stroke="#151515" stroke-width="4.5" />
+
+      <!-- Continents -->
+      <path d="M 238 230 C 255 235, 275 245, 282 260 C 290 280, 288 305, 278 330 C 268 355, 254 380, 248 395 C 242 380, 234 355, 230 330 C 224 305, 222 275, 230 248 Z" fill="#1E1E1E" />
+      <path d="M 105 255 C 130 245, 142 260, 145 275 C 140 295, 122 310, 115 325 C 108 345, 118 360, 110 365 C 98 355, 90 335, 92 305 C 94 280, 98 260, 105 255 Z" fill="#1E1E1E" />
+      <path d="M 390 255 C 418 250, 435 270, 432 295 C 425 315, 402 328, 390 340 C 378 350, 368 335, 375 315 C 382 295, 378 275, 390 255 Z" fill="#1E1E1E" />
+
+      <!-- Shield -->
+      <path d="M 250 188 C 280 202, 338 210, 370 204 C 374 256, 355 342, 250 425 C 145 342, 126 256, 130 204 C 162 210, 220 202, 250 188 Z"
+            fill="url(#sealGoldOuter)" stroke="#5A3E08" stroke-width="3" />
+      <path d="M 250 199 C 276 211, 328 218, 357 213 C 360 255, 344 332, 250 408 C 156 332, 140 255, 143 213 C 172 218, 224 211, 250 199 Z"
+            fill="#111111" stroke="#222222" stroke-width="1.5" />
+      <path d="M 250 209 C 272 219, 318 225, 345 221 C 347 257, 333 322, 250 392 C 167 322, 153 257, 155 221 C 182 225, 228 219, 250 209 Z"
+            fill="#FFFFFF" stroke="url(#sealGoldInner)" stroke-width="3" />
+
+      <!-- Open Bible -->
+      <g transform="translate(0, 8)">
+        <path d="M 250 242 C 228 236, 192 234, 172 240 C 170 274, 170 302, 172 330 C 192 324, 228 326, 250 334 C 272 326, 308 324, 328 330 C 330 302, 330 274, 328 240 C 308 234, 272 236, 250 242 Z" fill="#22150C" stroke="url(#sealGoldOuter)" stroke-width="2.5" />
+        <path d="M 248 245 C 228 240, 196 238, 176 244 C 175 272, 175 298, 176 324 C 196 318, 228 320, 248 327 Z" fill="#FFFFFF" stroke="#D4AF37" stroke-width="2" />
+        <path d="M 252 245 C 272 240, 304 238, 324 244 C 325 272, 325 298, 324 324 C 304 318, 272 320, 252 327 Z" fill="#FFFFFF" stroke="#D4AF37" stroke-width="2" />
+        <line x1="186" y1="262" x2="236" y2="260" stroke="#4B5563" stroke-width="2.5" stroke-linecap="round" />
+        <line x1="186" y1="276" x2="236" y2="274" stroke="#4B5563" stroke-width="2.5" stroke-linecap="round" />
+        <line x1="186" y1="290" x2="236" y2="288" stroke="#4B5563" stroke-width="2.5" stroke-linecap="round" />
+        <line x1="186" y1="304" x2="226" y2="302" stroke="#4B5563" stroke-width="2.5" stroke-linecap="round" />
+        <line x1="264" y1="260" x2="314" y2="262" stroke="#4B5563" stroke-width="2.5" stroke-linecap="round" />
+        <line x1="264" y1="274" x2="314" y2="276" stroke="#4B5563" stroke-width="2.5" stroke-linecap="round" />
+        <line x1="264" y1="288" x2="314" y2="290" stroke="#4B5563" stroke-width="2.5" stroke-linecap="round" />
+        <line x1="274" y1="302" x2="314" y2="304" stroke="#4B5563" stroke-width="2.5" stroke-linecap="round" />
+        <rect x="244.5" y="238" width="11" height="96" rx="2" fill="url(#sealGoldOuter)" stroke="#6A4E10" stroke-width="1.2" />
+        <rect x="230" y="262" width="40" height="10" rx="2" fill="url(#sealGoldOuter)" stroke="#6A4E10" stroke-width="1.2" />
+        <polygon points="250,260 255,267 250,274 245,267" fill="#FFFBEB" />
+        <path d="M 250 334 L 243 358 L 250 352 L 257 358 Z" fill="#D91A2A" stroke="#8B0000" stroke-width="1" />
+      </g>
+    </g>
+  </g>
+</svg>

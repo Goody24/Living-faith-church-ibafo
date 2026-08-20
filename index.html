@@ -1,167 +1,2221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Living Faith Church Ibafo</title>
+  
+  <!-- Primary Meta Tags -->
+  <title>Living Faith Church Ibafo | Winners Chapel International</title>
+  <meta name="title" content="Living Faith Church Ibafo | Winners Chapel International" />
+  <meta name="description" content="Welcome to Living Faith Church Ibafo (Winners Chapel). Experience transformative worship, signs and wonders, powerful sermons, daily devotionals, WSF cell locator, and a vibrant community along Lagos-Ibadan Expressway." />
+  <meta name="keywords" content="Living Faith Church Ibafo, Winners Chapel Ibafo, Bishop David Oyedepo, Church in Ibafo, Christian Worship Ogun State, Winners Chapel Sermons, WSF Cell Ibafo, Daily Devotional, Church Service Times" />
+  <meta name="author" content="Living Faith Church Ibafo Media Team" />
+  <meta name="theme-color" content="#8B0000" />
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://livingfaithibafo.org/" />
+  <meta property="og:title" content="Living Faith Church Ibafo | Home of Signs & Wonders" />
+  <meta property="og:description" content="Join us for life-changing worship encounters, undiluted Word of Faith, and supernatural breakthroughs in Ibafo, Ogun State." />
+  <meta property="og:image" content="banner.jpeg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="winners-logo.svg" />
+  <link rel="alternate icon" type="image/png" href="winners.png" />
+  <link rel="apple-touch-icon" href="winners.png" />
+
+  <!-- Google Fonts: Plus Jakarta Sans, Outfit & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ===== HEADER ===== -->
-  <header class="navbar">
+  <!-- ===== TOP ANNOUNCEMENT TICKER ===== -->
+  <div class="topbar">
+    <div class="container topbar-container">
+      <div class="topbar-left">
+        <span class="live-dot-pulse"></span>
+        <span class="topbar-text"><strong>Covenant Mandate:</strong> <em>"Liberating the world from all oppressions of the devil through the Word of Faith."</em></span>
+      </div>
+      <div class="topbar-right">
+        <div class="topbar-links">
+          <button class="topbar-search-btn" id="globalSearchTrigger" title="Quick Search (Ctrl + K)">
+            <i class="fa-solid fa-magnifying-glass"></i> <span class="search-hint">Search site... <kbd>Ctrl K</kbd></span>
+          </button>
+          <a href="#services"><i class="fa-regular fa-clock"></i> Service Times</a>
+          <a href="#giving"><i class="fa-solid fa-hand-holding-heart"></i> Online Giving</a>
+          <a href="https://wa.me/2348030000000" target="_blank" rel="noopener" class="topbar-whatsapp"><i class="fa-brands fa-whatsapp"></i> Help Desk</a>
+        </div>
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header class="navbar" id="navbar">
     <div class="container nav-content">
-      <a href="#" class="logo">
-        <img src="winners.jpeg" alt="Living Faith Church Ibafo Logo" />
-        <span>Living Faith Church Ibafo</span>
+      <a href="#home" class="logo" aria-label="Living Faith Church Ibafo Home">
+        <div class="logo-badge">
+          <img src="winners-logo.svg" alt="Living Faith Church Logo" class="logo-img" width="48" height="48" />
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">Living Faith Church</span>
+          <span class="logo-sub"><i class="fa-solid fa-location-dot"></i> Ibafo • Winners Chapel</span>
+        </div>
       </a>
-      <button class="menu-btn" id="menuBtn">☰</button>
-      <nav id="navMenu">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#ministries">Ministries</a>
-        <a href="#sermons">Sermons</a>
-        <a href="#contact" class="btn-outlines">Contact</a>
+
+      <!-- Desktop Nav -->
+      <nav id="navMenu" class="nav-links" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#devotional" class="nav-link">Devotional</a>
+        <a href="#sermons" class="nav-link">Sermons</a>
+        <a href="#giving" class="nav-link">Giving</a>
+
+        <!-- Explore More Dropdown -->
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-btn" type="button" aria-haspopup="true" aria-expanded="false">
+            <span>Explore</span> <i class="fa-solid fa-chevron-down nav-dropdown-icon"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="#events" class="dropdown-item">
+              <i class="fa-regular fa-calendar-days text-gold"></i>
+              <div>
+                <strong>Prophetic Events</strong>
+                <small>Programmes & Focus</small>
+              </div>
+            </a>
+            <a href="#scripture-vault" class="dropdown-item">
+              <i class="fa-solid fa-shield-halved text-gold"></i>
+              <div>
+                <strong>Scripture Vault</strong>
+                <small>Promises by Topic</small>
+              </div>
+            </a>
+            <a href="#wsf-cells" class="dropdown-item">
+              <i class="fa-solid fa-house-chimney-window text-gold"></i>
+              <div>
+                <strong>WSF Cell Locator</strong>
+                <small>Find Nearby Centers</small>
+              </div>
+            </a>
+            <a href="#ministries" class="dropdown-item">
+              <i class="fa-solid fa-people-group text-gold"></i>
+              <div>
+                <strong>Ministries & Units</strong>
+                <small>Service Units & WOFBI</small>
+              </div>
+            </a>
+            <a href="#growth-track" class="dropdown-item">
+              <i class="fa-solid fa-stairs text-gold"></i>
+              <div>
+                <strong>Growth Track</strong>
+                <small>Salvation & Discipleship</small>
+              </div>
+            </a>
+            <a href="#testimonies" class="dropdown-item">
+              <i class="fa-solid fa-star text-gold"></i>
+              <div>
+                <strong>Testimonies</strong>
+                <small>Turnaround Proofs</small>
+              </div>
+            </a>
+            <a href="#gallery" class="dropdown-item">
+              <i class="fa-solid fa-images text-gold"></i>
+              <div>
+                <strong>Church Gallery</strong>
+                <small>Sanctuary & Life Photos</small>
+              </div>
+            </a>
+            <a href="#contact" class="dropdown-item">
+              <i class="fa-solid fa-bus text-gold"></i>
+              <div>
+                <strong>Contact & Free Buses</strong>
+                <small>Prayer & Bus Routes</small>
+              </div>
+            </a>
+          </div>
+        </div>
       </nav>
+
+      <!-- Nav CTA & Hamburger -->
+      <div class="nav-actions">
+        <button class="nav-icon-btn" id="navSearchBtn" title="Search site (Ctrl+K)" aria-label="Search site">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="btn btn-outline btn-sm" id="navPlanVisitBtn">
+          <i class="fa-solid fa-calendar-check"></i> Plan a Visit
+        </button>
+        <button class="btn btn-primary btn-sm" id="navLiveStreamBtn">
+          <span class="live-dot"></span> Watch Live
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle Mobile Navigation" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
     </div>
   </header>
 
-  <!-- ===== HERO ===== -->
-  <section id="home" class="hero fade-in">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <img src="winners.png" class="hero-logo" alt="Church logo" />
-      <h1>Welcome to <span>Living Faith Church Ibafo</span></h1>
-      <p>Where faith is alive, hope is restored, and destinies are transformed.</p>
-      <div class="btn-group">
-        <a href="#visit" class="btn-primary">Plan a Visit</a>
-        <a href="#sermons" class="btn-outline">Watch Sermons</a>
+  <!-- ===== MOBILE DRAWER ===== -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="drawer-logo">
+        <div class="logo-badge logo-badge-sm">
+          <img src="winners-logo.svg" alt="Winners Logo" width="40" height="40" />
+        </div>
+        <div class="drawer-logo-text">
+          <span class="drawer-title">Living Faith Church</span>
+          <span class="drawer-sub">Ibafo • Winners Chapel</span>
+        </div>
+      </div>
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">&times;</button>
+    </div>
+    <div class="drawer-body">
+      <div class="drawer-search-box">
+        <button class="btn btn-outline btn-block" id="drawerSearchBtn">
+          <i class="fa-solid fa-magnifying-glass"></i> Search Church Website
+        </button>
+      </div>
+      <nav class="drawer-links">
+        <a href="#home" class="drawer-link"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#about" class="drawer-link"><i class="fa-solid fa-church"></i> About Us & Mandate</a>
+        <a href="#services" class="drawer-link"><i class="fa-regular fa-clock"></i> Service Schedule</a>
+        <a href="#devotional" class="drawer-link"><i class="fa-solid fa-sun"></i> Daily Devotional</a>
+        <a href="#events" class="drawer-link"><i class="fa-regular fa-calendar-star"></i> Events & Prophetic Focus</a>
+        <a href="#sermons" class="drawer-link"><i class="fa-solid fa-book-bible"></i> Sermons & Podcast</a>
+        <a href="#scripture-vault" class="drawer-link"><i class="fa-solid fa-shield-halved"></i> Covenant Scripture Vault</a>
+        <a href="#wsf-cells" class="drawer-link"><i class="fa-solid fa-location-crosshairs"></i> WSF Home Cell Locator</a>
+        <a href="#ministries" class="drawer-link"><i class="fa-solid fa-people-group"></i> Ministries & Service Units</a>
+        <a href="#growth-track" class="drawer-link"><i class="fa-solid fa-stairs"></i> Spiritual Growth Track</a>
+        <a href="#giving" class="drawer-link"><i class="fa-solid fa-hand-holding-dollar"></i> Online Giving & Calculator</a>
+        <a href="#testimonies" class="drawer-link"><i class="fa-solid fa-star"></i> Testimonies</a>
+        <a href="#visitor-guide" class="drawer-link"><i class="fa-solid fa-location-dot"></i> Visitor Guide & Free Buses</a>
+        <a href="#gallery" class="drawer-link"><i class="fa-solid fa-images"></i> Church Gallery</a>
+        <a href="#contact" class="drawer-link"><i class="fa-solid fa-envelope"></i> Contact & Prayer</a>
+      </nav>
+      <div class="drawer-footer">
+        <button class="btn btn-primary btn-block mb-2" id="drawerPlanVisitBtn">
+          <i class="fa-solid fa-calendar-check"></i> Plan Your Visit
+        </button>
+        <button class="btn btn-gold btn-block" id="drawerGiveBtn">
+          <i class="fa-solid fa-hand-holding-heart"></i> Give Online
+        </button>
       </div>
     </div>
-  </section>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
 
-  <!-- ===== ABOUT SECTION ===== -->
-  <section id="about" class="section fade-in">
-    <div class="container">
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main-content">
 
-      <div class="about-block">
-        <h2>About Us</h2>
-        <p>Living Faith Church Ibafo (Winners Chapel) is a vibrant family of believers with a passion to see lives changed through the Word of Faith and the power of the Holy Spirit.</p>
-        <p>At Living Faith Church Ibafo, we are more than just a gathering of believers — we are a family of faith, love, and purpose. Rooted in the life-transforming teachings of God’s Word, we exist to raise people of power, purpose, and impact who will reign in life through Christ Jesus.</p>
-        <p>Our vision is driven by a divine mandate received by God’s servant, Bishop David O. Oyedepo, to “liberate the world from all oppressions of the devil through the preaching of the Word of Faith.” Here at Ibafo, we carry that same torch with passion — bringing light, healing, and hope to our community and beyond.</p>
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero" aria-label="Welcome Hero">
+      <div class="hero-bg-overlay"></div>
+      <div class="container hero-container">
+        
+        <div class="hero-badge animate-fade-in">
+          <span class="gold-badge"><i class="fa-solid fa-crown"></i> 2026 Mandate & Prophetic Focus</span>
+          <span class="live-status-pill"><span class="pulse-indicator"></span> Next Service Loading...</span>
+        </div>
+
+        <div class="hero-content animate-fade-in-up">
+          <img src="winners-logo.svg" class="hero-logo" alt="Living Faith Church Worldwide Logo" width="105" height="105" />
+          <h1 class="hero-title">
+            Experience God's Presence & Power at <span class="highlight">Living Faith Church Ibafo</span>
+          </h1>
+          <p class="hero-description">
+            A home of signs, wonders, and supernatural turnarounds. Where faith is ignited, hope is restored, and destinies are gloriously established in Christ Jesus along the Lagos-Ibadan expressway.
+          </p>
+
+          <div class="hero-btn-group">
+            <button class="btn btn-primary btn-lg" id="heroPlanVisitBtn">
+              <i class="fa-solid fa-calendar-check"></i> Plan a Visit
+            </button>
+            <a href="#sermons" class="btn btn-glass btn-lg">
+              <i class="fa-solid fa-circle-play"></i> Watch Sermons
+            </a>
+            <button class="btn btn-gold btn-lg" id="heroPrayerBtn">
+              <i class="fa-solid fa-hands-praying"></i> Need Prayer?
+            </button>
+            <button class="btn btn-outline-white btn-lg" id="heroPropheticWordBtn">
+              <i class="fa-solid fa-sparkles"></i> Word for Today
+            </button>
+          </div>
+
+          <!-- Hero Metrics / Stats Ribbon -->
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-number" data-count="3">0</span>
+              <span class="stat-label">Sunday Services</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="12">0</span>
+              <span class="stat-label">Pillars of Faith</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="18">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">WSF Cell Centers</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="100">0</span><span class="stat-suffix">%</span>
+              <span class="stat-label">Word of Faith</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== LIVE SERVICE COUNTDOWN & SCHEDULE ===== -->
+    <section id="services" class="section section-countdown">
+      <div class="container">
+        
+        <div class="countdown-card glass-panel">
+          <div class="countdown-header">
+            <div class="countdown-tag">
+              <i class="fa-solid fa-satellite-dish"></i> UPCOMING WORSHIP ENCOUNTER
+            </div>
+            <h2 class="countdown-service-name" id="nextServiceName">Sunday 1st Service</h2>
+            <p class="countdown-service-desc" id="nextServiceTime">Sunday at 6:30 AM (WAT)</p>
+          </div>
+
+          <div class="timer-grid" id="serviceTimer">
+            <div class="timer-unit">
+              <span class="timer-value" id="days">00</span>
+              <span class="timer-label">Days</span>
+            </div>
+            <div class="timer-separator">:</div>
+            <div class="timer-unit">
+              <span class="timer-value" id="hours">00</span>
+              <span class="timer-label">Hours</span>
+            </div>
+            <div class="timer-separator">:</div>
+            <div class="timer-unit">
+              <span class="timer-value" id="minutes">00</span>
+              <span class="timer-label">Minutes</span>
+            </div>
+            <div class="timer-separator">:</div>
+            <div class="timer-unit">
+              <span class="timer-value" id="seconds">00</span>
+              <span class="timer-label">Seconds</span>
+            </div>
+          </div>
+
+          <div class="countdown-actions">
+            <button class="btn btn-primary" id="countdownPlanBtn">
+              <i class="fa-solid fa-car"></i> Get Bus Pickup / Directions
+            </button>
+            <button class="btn btn-gold" id="countdownStreamBtn">
+              <i class="fa-solid fa-tower-broadcast"></i> Watch Online Broadcast
+            </button>
+            <a href="#visitor-guide" class="btn btn-outline">
+              <i class="fa-solid fa-circle-info"></i> What to Expect
+            </a>
+          </div>
+        </div>
+
+        <!-- Weekly Schedule Grid -->
+        <div class="section-header mt-5">
+          <span class="section-badge"><i class="fa-regular fa-calendar-days"></i> Service Schedule</span>
+          <h2 class="section-title">Join Us in God's Presence</h2>
+          <p class="section-subtitle">Experience powerful praise, fervent prayers, and the unadulterated Word of Faith throughout the week.</p>
+        </div>
+
+        <div class="services-grid">
+          
+          <div class="service-schedule-card">
+            <div class="service-icon"><i class="fa-solid fa-sun"></i></div>
+            <div class="service-badge-pill">Sunday Celebration</div>
+            <h3>Sunday Worship Services</h3>
+            <p class="service-timing">Three Glorious Encounters Every Sunday</p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-check"></i> <strong>1st Service:</strong> 6:30 AM - 8:15 AM</li>
+              <li><i class="fa-solid fa-check"></i> <strong>2nd Service:</strong> 8:30 AM - 10:15 AM</li>
+              <li><i class="fa-solid fa-check"></i> <strong>3rd Service:</strong> 10:30 AM - 12:15 PM</li>
+            </ul>
+            <p class="service-features"><i class="fa-solid fa-child"></i> Includes Children's Church & Teens Church</p>
+          </div>
+
+          <div class="service-schedule-card featured">
+            <div class="service-icon"><i class="fa-solid fa-bread-slice"></i></div>
+            <div class="service-badge-pill gold">Midweek Encounter</div>
+            <h3>Midweek Communion Service</h3>
+            <p class="service-timing">Every Wednesday Evening</p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-check"></i> <strong>Time:</strong> 6:00 PM - 7:45 PM</li>
+              <li><i class="fa-solid fa-check"></i> <strong>Focus:</strong> Word, Healing & Holy Communion</li>
+              <li><i class="fa-solid fa-check"></i> <strong>Venue:</strong> Main Church Sanctuary</li>
+            </ul>
+            <p class="service-features"><i class="fa-solid fa-shield-halved"></i> Break free from spiritual fatigue mid-week</p>
+          </div>
+
+          <div class="service-schedule-card">
+            <div class="service-icon"><i class="fa-solid fa-fire"></i></div>
+            <div class="service-badge-pill">Daily Spiritual Fire</div>
+            <h3>Covenant Hour of Prayer</h3>
+            <p class="service-timing">Monday to Saturday Morning</p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-check"></i> <strong>Weekdays (Mon-Fri):</strong> 6:00 AM - 7:00 AM</li>
+              <li><i class="fa-solid fa-check"></i> <strong>Saturdays:</strong> 6:30 AM - 7:30 AM</li>
+              <li><i class="fa-solid fa-check"></i> <strong>Venue:</strong> Sanctuary & Online broadcast</li>
+            </ul>
+            <p class="service-features"><i class="fa-solid fa-bolt"></i> Secure your day with early morning kingdom advancement</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== DAILY DEVOTIONAL & PROPHETIC WORD ===== -->
+    <section id="devotional" class="section section-devotional">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge gold"><i class="fa-solid fa-book-bible"></i> Daily Spiritual Manna</span>
+          <h2 class="section-title">Prophetic Word & Devotional of the Day</h2>
+          <p class="section-subtitle">Start and empower your day with undiluted covenant revelations and prophetic declarations.</p>
+        </div>
+
+        <div class="devotional-card glass-panel" id="devotionalContainer">
+          <div class="devotional-top-bar">
+            <div class="devotional-date-badge">
+              <i class="fa-regular fa-calendar"></i> <span id="devotionalDateDisplay">Today's Devotional</span>
+            </div>
+            <div class="devotional-nav-controls">
+              <button class="dev-nav-btn" id="prevDevotionalBtn" title="Previous Devotional"><i class="fa-solid fa-arrow-left"></i> Previous</button>
+              <button class="dev-nav-btn" id="todayDevotionalBtn" title="Today's Devotional"><i class="fa-solid fa-rotate-right"></i> Today</button>
+              <button class="dev-nav-btn" id="nextDevotionalBtn" title="Next Devotional">Next <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <div class="devotional-body">
+            <div class="devotional-header-area">
+              <span class="devotional-theme-pill" id="devotionalTheme">Faith & Victory</span>
+              <h3 class="devotional-title" id="devotionalTitle">Walking in the Supernatural by the Word of Faith</h3>
+              <p class="devotional-scripture" id="devotionalScripture">
+                <i class="fa-solid fa-quote-left"></i> <em>"For whatsoever is born of God overcometh the world: and this is the victory that overcometh the world, even our faith."</em> — <strong>1 John 5:4</strong>
+              </p>
+            </div>
+
+            <div class="devotional-content-text" id="devotionalBody">
+              <p>Faith is not a wishful thought or a religious sentiment; it is a living spiritual force drawn from the living Word of God. When faith is put into active operation, heaven moves and obstacles give way.</p>
+              <p>To operate in victory, you must feed your spirit continually with God's promises. Whatever the Word cannot do, let no human institution attempt it. Today, take authority over every contrary circumstance and decree your dominion!</p>
+            </div>
+
+            <div class="devotional-confession-box">
+              <div class="confession-header">
+                <i class="fa-solid fa-fire text-gold"></i>
+                <strong>PROPHETIC DECLARATION & CONFESSION FOR TODAY:</strong>
+              </div>
+              <p id="devotionalConfession">
+                "I am born of God; therefore, I am an overcomer! No sickness, failure, or setback has power over my destiny. As I speak God's Word in faith today, mountains move, doors open, and the favor of God surrounds me like a shield in Jesus' name!"
+              </p>
+            </div>
+
+            <div class="devotional-actions">
+              <button class="btn btn-primary btn-sm" id="copyDevotionalConfessionBtn">
+                <i class="fa-regular fa-copy"></i> Copy Declaration
+              </button>
+              <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm" id="shareDevotionalWhatsAppBtn">
+                <i class="fa-brands fa-whatsapp"></i> Share on WhatsApp
+              </a>
+              <button class="btn btn-gold btn-sm" id="generatePropheticCardBtn">
+                <i class="fa-solid fa-sparkles"></i> Draw Faith Card
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== CHURCH EVENTS & PROPHETIC CALENDAR ===== -->
+    <section id="events" class="section section-events">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-regular fa-calendar-check"></i> Kingdom Calendar</span>
+          <h2 class="section-title">Upcoming Events & Prophetic Focus</h2>
+          <p class="section-subtitle">Mark your calendar and prepare for encounters that will redefine your life and family.</p>
+        </div>
+
+        <!-- Monthly Prophetic Theme Banner -->
+        <div class="prophetic-theme-banner glass-panel">
+          <div class="prophetic-banner-icon"><i class="fa-solid fa-crown"></i></div>
+          <div class="prophetic-banner-text">
+            <span class="theme-period">MONTHLY PROPHETIC FOCUS</span>
+            <h3>"MONTH OF WONDERS WITHOUT NUMBER & SUPERNATURAL BREAKTHROUGHS"</h3>
+            <p><em>"Which doeth great things past finding out; yea, and wonders without number."</em> — Job 9:10</p>
+          </div>
+        </div>
+
+        <!-- Events Grid -->
+        <div class="events-grid" id="eventsGrid">
+          
+          <div class="event-card">
+            <div class="event-date-box">
+              <span class="event-month">FEB</span>
+              <span class="event-day">04-06</span>
+            </div>
+            <div class="event-details">
+              <span class="event-category-tag spiritual">Spiritual Fasting</span>
+              <h3>Week of Spiritual Emphasis</h3>
+              <p class="event-time"><i class="fa-regular fa-clock"></i> Wednesday - Friday • 6:00 PM Daily</p>
+              <p class="event-location"><i class="fa-solid fa-location-dot"></i> Main Sanctuary & Holy Communion</p>
+              <p class="event-desc">Three days of waiting upon the Lord with fasting and daily Holy Communion to break every stubborn yoke and renew spiritual fire.</p>
+              <div class="event-card-actions">
+                <button class="btn btn-outline btn-sm add-cal-btn" data-event="1">
+                  <i class="fa-regular fa-calendar-plus"></i> Add to Calendar
+                </button>
+                <button class="btn btn-primary btn-sm rsvp-event-btn" data-title="Week of Spiritual Emphasis">
+                  <i class="fa-solid fa-bell"></i> Set Reminder
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-date-box">
+              <span class="event-month">FEB</span>
+              <span class="event-day">15</span>
+            </div>
+            <div class="event-details">
+              <span class="event-category-tag special">Prophetic Service</span>
+              <h3>Covenant Day of Open Doors & Business Boom</h3>
+              <p class="event-time"><i class="fa-regular fa-clock"></i> Sunday 3 Services (6:30 AM, 8:30 AM, 10:30 AM)</p>
+              <p class="event-location"><i class="fa-solid fa-location-dot"></i> Living Faith Church Ibafo Altar</p>
+              <p class="event-desc">Special prophetic impartation service for career acceleration, financial multiplication, business breakthroughs, and supernatural favor.</p>
+              <div class="event-card-actions">
+                <button class="btn btn-outline btn-sm add-cal-btn" data-event="2">
+                  <i class="fa-regular fa-calendar-plus"></i> Add to Calendar
+                </button>
+                <button class="btn btn-primary btn-sm rsvp-event-btn" data-title="Covenant Day of Open Doors">
+                  <i class="fa-solid fa-bell"></i> Set Reminder
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-date-box">
+              <span class="event-month">FEB</span>
+              <span class="event-day">21</span>
+            </div>
+            <div class="event-details">
+              <span class="event-category-tag youth">Youth Alive</span>
+              <h3>Youth Alive Leadership & Career Summit</h3>
+              <p class="event-time"><i class="fa-regular fa-clock"></i> Saturday • 10:00 AM - 1:00 PM</p>
+              <p class="event-location"><i class="fa-solid fa-location-dot"></i> Youth Hall / Main Auditorium</p>
+              <p class="event-desc">Practical insights on digital skills, entrepreneurship, relationship mastery, and walking in kingdom dominion for young adults.</p>
+              <div class="event-card-actions">
+                <button class="btn btn-outline btn-sm add-cal-btn" data-event="3">
+                  <i class="fa-regular fa-calendar-plus"></i> Add to Calendar
+                </button>
+                <button class="btn btn-primary btn-sm rsvp-event-btn" data-title="Youth Alive Career Summit">
+                  <i class="fa-solid fa-bell"></i> Set Reminder
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-date-box">
+              <span class="event-month">MAR</span>
+              <span class="event-day">02-14</span>
+            </div>
+            <div class="event-details">
+              <span class="event-category-tag wofbi">Bible Institute</span>
+              <h3>WOFBI Special Basic Certificate Course (BCC)</h3>
+              <p class="event-time"><i class="fa-regular fa-clock"></i> Intensive 2 Weeks (8:00 AM - 3:00 PM Daily)</p>
+              <p class="event-location"><i class="fa-solid fa-location-dot"></i> WOFBI Lecture Halls Ibafo</p>
+              <p class="event-desc">In-depth Word encounter covering Principles of Faith, Word Foundation, Vision & Ministry, Leadership, and Spiritual Warfare.</p>
+              <div class="event-card-actions">
+                <button class="btn btn-outline btn-sm add-cal-btn" data-event="4">
+                  <i class="fa-regular fa-calendar-plus"></i> Add to Calendar
+                </button>
+                <button class="btn btn-primary btn-sm rsvp-event-btn" data-title="WOFBI Basic Certificate Course">
+                  <i class="fa-solid fa-bell"></i> Set Reminder
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION & MANDATE ===== -->
+    <section id="about" class="section section-about">
+      <div class="container">
+        
+        <div class="about-grid">
+          
+          <div class="about-visuals">
+            <div class="about-image-wrapper">
+              <img src="images/church.jpg" alt="Living Faith Church Ibafo Congregation" class="about-main-img" />
+              <div class="about-badge-floating">
+                <i class="fa-solid fa-dove"></i>
+                <div>
+                  <strong>Liberation Mandate</strong>
+                  <span>Since May 2, 1981</span>
+                </div>
+              </div>
+            </div>
+            <div class="about-sub-images">
+              <img src="images/pastor.jpg" alt="Resident Pastor" class="about-sub-img" title="Resident Pastor" />
+              <img src="images/altar.jpg" alt="Church Altar" class="about-sub-img" title="Church Sanctuary" />
+            </div>
+          </div>
+
+          <div class="about-details">
+            <div class="section-header text-left">
+              <span class="section-badge"><i class="fa-solid fa-shield-heart"></i> About Winners Chapel Ibafo</span>
+              <h2 class="section-title">A Family of Faith, Love, and Dominion</h2>
+            </div>
+            
+            <p class="lead-text">
+              Living Faith Church Ibafo is a vibrant parish of the Living Faith Church Worldwide (also known as Winners Chapel International). We are driven by a burning passion to see lives radically transformed by the power of God's Word.
+            </p>
+
+            <div class="mandate-box">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <blockquote>
+                "The hour has come to liberate the world from all oppressions of the devil through the preaching of the Word of Faith; and I am sending you to undertake this task."
+              </blockquote>
+              <div class="mandate-author">— Bishop David O. Oyedepo (Presiding Bishop)</div>
+            </div>
+
+            <p>
+              Under the pastoral leadership of <strong>Pastor Babatunde Olaitan</strong>, Living Faith Church Ibafo continues to be a lighthouse of spiritual illumination along the Lagos-Ibadan corridor, birthing giants and raising people of purpose.
+            </p>
+
+            <div class="about-features-list">
+              <div class="feat-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <div><strong>Undiluted Word:</strong> Practical Bible teachings that deliver measurable proofs.</div>
+              </div>
+              <div class="feat-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <div><strong>Loving Fellowship:</strong> A warm, caring community where nobody is a stranger.</div>
+              </div>
+              <div class="feat-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <div><strong>Supernatural Proofs:</strong> Constant testimonies of healings, turnarounds, and open doors.</div>
+              </div>
+            </div>
+
+            <div class="about-cta mt-4">
+              <button class="btn btn-primary" id="aboutPlanVisitBtn">
+                <i class="fa-solid fa-compass"></i> Visit Us This Sunday
+              </button>
+              <a href="#pillars" class="btn btn-outline">
+                <i class="fa-solid fa-monument"></i> 12 Pillars of Faith
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- 12 Pillars of the Commission Accordion / Grid -->
+        <div id="pillars" class="pillars-section mt-5">
+          <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-columns"></i> Foundations of Truth</span>
+            <h2 class="section-title">The 12 Pillars of the Commission</h2>
+            <p class="section-subtitle">The foundational revelations that anchor every teaching and spiritual engagement at Living Faith Church.</p>
+          </div>
+
+          <div class="pillars-grid">
+            <div class="pillar-card">
+              <span class="pillar-number">01</span>
+              <h4>Faith</h4>
+              <p>1 John 5:4</p>
+            </div>
+            <div class="pillar-card">
+              <span class="pillar-number">02</span>
+              <h4>The Word</h4>
+              <p>John 1:1-5</p>
+            </div>
+            <div class="pillar-card">
+              <span class="pillar-number">03</span>
+              <h4>The Supernatural</h4>
+              <p>Mark 16:17-18</p>
+            </div>
+            <div class="pillar-card">
+              <span class="pillar-number">04</span>
+              <h4>The Holy Ghost</h4>
+              <p>Acts 1:8</p>
+            </div>
+            <div class="pillar-card">
+              <span class="pillar-number">05</span>
+              <h4>Praise</h4>
+              <p>Psalm 22:3</p>
+            </div>
+            <div class="pillar-card">
+              <span class="pillar-number">06</span>
+              <h4>Prosperity</h4>
+              <p>3 John 2</p>
+            </div>
+            <div class="pillar-card">
+              <span class="pillar-number">07</span>
+              <h4>Prayer</h4>
+              <p>1 John 5:14</p>
+            </div>
+            <div class="pillar-card">
+              <span class="pillar-number">08</span>
+              <h4>Healing</h4>
+              <p>Isaiah 53:5</p>
+            </div>
+            <div class="pillar-card">
+              <span class="pillar-number">09</span>
+              <h4>Wisdom</h4>
+              <p>Proverbs 4:7</p>
+            </div>
+            <div class="pillar-card">
+              <span class="pillar-number">10</span>
+              <h4>Success</h4>
+              <p>Joshua 1:8</p>
+            </div>
+            <div class="pillar-card">
+              <span class="pillar-number">11</span>
+              <h4>Vision</h4>
+              <p>Habakkuk 2:1-3</p>
+            </div>
+            <div class="pillar-card">
+              <span class="pillar-number">12</span>
+              <h4>Consecration</h4>
+              <p>Hebrews 12:14</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== COVENANT SCRIPTURE VAULT & PROMISE FINDER ===== -->
+    <section id="scripture-vault" class="section section-scripture-vault">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge gold"><i class="fa-solid fa-shield-halved"></i> Covenant Weapons</span>
+          <h2 class="section-title">Covenant Scripture Vault</h2>
+          <p class="section-subtitle">Find exact Bible promises for your situation. Stand on God's Word and see the devil bow!</p>
+        </div>
+
+        <!-- Scripture Category Filter Pills -->
+        <div class="scripture-filter-tabs" id="scriptureFilterTabs">
+          <button class="filter-tab active" data-category="all">All Promises</button>
+          <button class="filter-tab" data-category="healing"><i class="fa-solid fa-heart-pulse"></i> Divine Healing</button>
+          <button class="filter-tab" data-category="prosperity"><i class="fa-solid fa-coins"></i> Financial Fortune</button>
+          <button class="filter-tab" data-category="protection"><i class="fa-solid fa-shield-virus"></i> Protection & Safety</button>
+          <button class="filter-tab" data-category="fruitfulness"><i class="fa-solid fa-baby"></i> Fruit of the Womb</button>
+          <button class="filter-tab" data-category="career"><i class="fa-solid fa-briefcase"></i> Career & Academics</button>
+          <button class="filter-tab" data-category="peace"><i class="fa-solid fa-dove"></i> Peace & Freedom</button>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="vault-search-wrap">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="scriptureSearchInput" placeholder="Search scriptures by keyword (e.g., healing, fear, seed, victory)..." />
+        </div>
+
+        <!-- Scripture Cards Grid -->
+        <div class="scriptures-grid" id="scripturesGrid">
+          <!-- Dynamically populated via script.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SERMONS & DIGITAL MEDIA LIBRARY ===== -->
+    <section id="sermons" class="section section-sermons">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-microphone-lines"></i> Spiritual Nourishment</span>
+          <h2 class="section-title">Latest Sermons & Messages</h2>
+          <p class="section-subtitle">Listen to anointed life-changing messages, voice summaries, download sermon outlines, and build unshakeable faith.</p>
+        </div>
+
+        <!-- Sermon Category Filter Pills -->
+        <div class="sermon-filter-tabs" id="sermonFilterTabs">
+          <button class="filter-tab active" data-filter="all">All Sermons</button>
+          <button class="filter-tab" data-filter="faith">Faith & Power</button>
+          <button class="filter-tab" data-filter="prayer">Prayer & Deliverance</button>
+          <button class="filter-tab" data-filter="healing">Divine Health</button>
+          <button class="filter-tab" data-filter="prosperity">Financial Fortune</button>
+          <button class="filter-tab" data-filter="praise">Praise & Wonders</button>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="sermon-search-wrap">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="sermonSearchInput" placeholder="Search message title, preacher, or scripture..." />
+        </div>
+
+        <!-- Sermon Cards Grid -->
+        <div class="sermons-grid" id="sermonGrid">
+          <!-- Dynamically populated via script.js -->
+        </div>
+
+        <!-- Stream Online Banner -->
+        <div class="live-stream-banner glass-panel mt-5">
+          <div class="live-banner-content">
+            <div class="live-tag"><span class="pulse-red"></span> DOMI STREAM / ONLINE SERVICE</div>
+            <h3>Can't Join Us Physically in Ibafo?</h3>
+            <p>Connect with the global transmission of Winners Chapel services and Shiloh broadcasts live wherever you are with real-time prayer reactions.</p>
+          </div>
+          <button class="btn btn-gold btn-lg" id="watchGlobalStreamBtn">
+            <i class="fa-solid fa-play"></i> Launch Live Watch Party
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== WINNERS SATELLITE FELLOWSHIP (WSF) CELL LOCATOR ===== -->
+    <section id="wsf-cells" class="section section-wsf">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge gold"><i class="fa-solid fa-house-chimney-user"></i> Home Cell Fellowship</span>
+          <h2 class="section-title">Winners Satellite Fellowship (WSF)</h2>
+          <p class="section-subtitle">
+            <em>"And daily in the temple, and in every house, they ceased not to teach and preach Jesus Christ."</em> — Acts 5:42.<br>
+            Connect with a loving family near your home every Saturday at <strong>5:00 PM - 6:00 PM</strong>.
+          </p>
+        </div>
+
+        <!-- WSF Zone Filter Tabs -->
+        <div class="wsf-filter-tabs" id="wsfFilterTabs">
+          <button class="filter-tab active" data-zone="all">All Locations</button>
+          <button class="filter-tab" data-zone="gideon">Gideon Village</button>
+          <button class="filter-tab" data-zone="ibafo-central">Ibafo Central</button>
+          <button class="filter-tab" data-zone="asese">Asese Axis</button>
+          <button class="filter-tab" data-zone="mowe">Mowe Junction</button>
+          <button class="filter-tab" data-zone="magboro">Magboro Axis</button>
+          <button class="filter-tab" data-zone="orimerunmu">Orimerunmu</button>
+        </div>
+
+        <!-- WSF Search -->
+        <div class="wsf-search-wrap">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="wsfSearchInput" placeholder="Search cell centers by street, estate, or minister name..." />
+        </div>
+
+        <!-- WSF Cell Cards Grid -->
+        <div class="wsf-grid" id="wsfGrid">
+          <!-- Dynamically populated via script.js -->
+        </div>
+
+        <!-- WSF Host Application Callout -->
+        <div class="wsf-host-banner glass-panel mt-4">
+          <div>
+            <h4><i class="fa-solid fa-door-open text-gold"></i> Desire to Host a WSF Center in Your House?</h4>
+            <p>Open your home for kingdom fellowship and let the Ark of God bring supernatural blessings to your household (2 Samuel 6:11).</p>
+          </div>
+          <a href="https://wa.me/2348030000000?text=Praise%20God,%20I%20desire%20to%20open%20my%20home%20as%20a%20WSF%20Center%20in%20Ibafo." target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="fa-brands fa-whatsapp"></i> Apply to Host a Cell
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== MINISTRIES & SERVICE UNITS ===== -->
+    <section id="ministries" class="section section-ministries">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-people-carry-box"></i> Kingdom Stewardship</span>
+          <h2 class="section-title">Our Ministries & Service Units</h2>
+          <p class="section-subtitle">Discover a place where your gifts are ignited for kingdom advancement. In stewardship lies your divine reward!</p>
+        </div>
+
+        <div class="ministries-grid">
+          
+          <div class="ministry-card">
+            <div class="ministry-img-wrap">
+              <img src="images/dance.jpg" alt="Youth Alive Fellowship" />
+              <span class="ministry-tag">Youth & Singles</span>
+            </div>
+            <div class="ministry-body">
+              <h3>Youth Alive Fellowship (YAF)</h3>
+              <p>Empowering teenagers and young adults with leadership values, spiritual stamina, career excellence, and divine purpose.</p>
+              <button class="btn btn-outline btn-sm join-unit-trigger" data-unit="Youth Alive Fellowship">Join Unit</button>
+            </div>
+          </div>
+
+          <div class="ministry-card">
+            <div class="ministry-img-wrap">
+              <img src="images/foren.jpg" alt="Winners Voice Choir" />
+              <span class="ministry-tag">Music & Worship</span>
+            </div>
+            <div class="ministry-body">
+              <h3>Winners Voice (Church Choir)</h3>
+              <p>Leading the congregation into the Holy of Holies through spirit-filled praise, worship, and inspiring musical ministrations.</p>
+              <button class="btn btn-outline btn-sm join-unit-trigger" data-unit="Winners Voice Choir">Join Unit</button>
+            </div>
+          </div>
+
+          <div class="ministry-card">
+            <div class="ministry-img-wrap">
+              <img src="images/rebot.jpg" alt="Kingdom Heritage Children Church" />
+              <span class="ministry-tag">Children & Heritage</span>
+            </div>
+            <div class="ministry-body">
+              <h3>Kingdom Heritage (Children Church)</h3>
+              <p>Nurturing young minds in Bible stories, godly morals, creative arts, and foundational Christian disciplines in a fun, safe space.</p>
+              <button class="btn btn-outline btn-sm join-unit-trigger" data-unit="Kingdom Heritage Children">Join Unit</button>
+            </div>
+          </div>
+
+          <div class="ministry-card">
+            <div class="ministry-img-wrap">
+              <img src="images/teens church.jpg" alt="Teens Church" />
+              <span class="ministry-tag">Teens & Junior Church</span>
+            </div>
+            <div class="ministry-body">
+              <h3>Teens Alive Church</h3>
+              <p>Guiding secondary school youth through identity, peer challenges, academic excellence, and kingdom boldness.</p>
+              <button class="btn btn-outline btn-sm join-unit-trigger" data-unit="Teens Alive">Join Unit</button>
+            </div>
+          </div>
+
+          <div class="ministry-card">
+            <div class="ministry-img-wrap">
+              <img src="images/worker.jpg" alt="Sanctuary Keepers & Usheering" />
+              <span class="ministry-tag">Sanctuary & Order</span>
+            </div>
+            <div class="ministry-body">
+              <h3>Sanctuary Keepers & Ushers</h3>
+              <p>Ensuring the house of God is maintained in dignity, cleanliness, orderly protocol, and a warm welcoming atmosphere.</p>
+              <button class="btn btn-outline btn-sm join-unit-trigger" data-unit="Sanctuary & Usheering">Join Unit</button>
+            </div>
+          </div>
+
+          <div class="ministry-card">
+            <div class="ministry-img-wrap">
+              <img src="images/bassist.jpg" alt="Technical & Media Unit" />
+              <span class="ministry-tag">Media & Sound</span>
+            </div>
+            <div class="ministry-body">
+              <h3>Technical, Sound & Media</h3>
+              <p>Managing audio mixing, visual broadcast, live video feeds, graphics, photography, and digital reach for the kingdom.</p>
+              <button class="btn btn-outline btn-sm join-unit-trigger" data-unit="Technical & Media">Join Unit</button>
+            </div>
+          </div>
+
+          <div class="ministry-card">
+            <div class="ministry-img-wrap">
+              <img src="images/graduation.jpg" alt="WOFBI - Word of Faith Bible Institute" />
+              <span class="ministry-tag">Leadership Institute</span>
+            </div>
+            <div class="ministry-body">
+              <h3>WOFBI (Bible Institute)</h3>
+              <p>Equipping believers with in-depth biblical revelations, leadership training, and ministry courses: BCC, LCC, and LDC.</p>
+              <button class="btn btn-outline btn-sm join-unit-trigger" data-unit="WOFBI Training">Enroll Now</button>
+            </div>
+          </div>
+
+          <div class="ministry-card">
+            <div class="ministry-img-wrap">
+              <img src="images/elder.jpg" alt="Pastoral Care & Welfare" />
+              <span class="ministry-tag">Care & Community</span>
+            </div>
+            <div class="ministry-body">
+              <h3>Medical & Community Outreach</h3>
+              <p>Extending Christ’s love to Ibafo community through medical checks, welfare assistance, fitness programmes, and soul winning.</p>
+              <button class="btn btn-outline btn-sm join-unit-trigger" data-unit="Medical & Outreach">Join Unit</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SPIRITUAL GROWTH TRACK & NEW CONVERT PATHWAY ===== -->
+    <section id="growth-track" class="section section-growth">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge gold"><i class="fa-solid fa-stairs"></i> Discipleship Journey</span>
+          <h2 class="section-title">Your Spiritual Growth Track</h2>
+          <p class="section-subtitle">Take clear, guided steps from accepting Christ to walking in full dominion and fruitful kingdom service.</p>
+        </div>
+
+        <div class="growth-track-grid">
+          
+          <div class="growth-step-card">
+            <div class="step-badge">STEP 1</div>
+            <div class="step-icon"><i class="fa-solid fa-heart-circle-bolt"></i></div>
+            <h3>Salvation & New Birth</h3>
+            <p>Make Jesus the Lord of your life and step into eternal life, righteousness, and divine sonship.</p>
+            <button class="btn btn-primary btn-sm mt-3" id="openSalvationModalBtn">
+              <i class="fa-solid fa-hands-praying"></i> Accept Jesus / Rededicate
+            </button>
+          </div>
+
+          <div class="growth-step-card">
+            <div class="step-badge">STEP 2</div>
+            <div class="step-icon"><i class="fa-solid fa-water"></i></div>
+            <h3>Water & Holy Ghost Baptism</h3>
+            <p>Bury the old sinful nature by immersion in water and receive power by the Holy Ghost with evidence of speaking in tongues.</p>
+            <button class="btn btn-outline btn-sm mt-3" id="openBaptismModalBtn">
+              <i class="fa-solid fa-droplet"></i> Request Baptism
+            </button>
+          </div>
+
+          <div class="growth-step-card">
+            <div class="step-badge">STEP 3</div>
+            <div class="step-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3>Believer's Foundation Class (BFC)</h3>
+            <p>Learn core Christian doctrines, the mystery of the new birth, Christian disciplines, and how to maintain total victory.</p>
+            <button class="btn btn-outline btn-sm mt-3 join-unit-trigger" data-unit="Believers Foundation Class">
+              <i class="fa-solid fa-book-open-reader"></i> Enroll in BFC
+            </button>
+          </div>
+
+          <div class="growth-step-card">
+            <div class="step-badge">STEP 4</div>
+            <div class="step-icon"><i class="fa-solid fa-award"></i></div>
+            <h3>WOFBI & Kingdom Stewardship</h3>
+            <p>Undergo certified leadership training in WOFBI and be inducted into an active service unit for supernatural promotion.</p>
+            <button class="btn btn-gold btn-sm mt-3 join-unit-trigger" data-unit="WOFBI Training">
+              <i class="fa-solid fa-certificate"></i> Start WOFBI
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== ONLINE GIVING & TITHE CALCULATOR ===== -->
+    <section id="giving" class="section section-giving">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge gold"><i class="fa-solid fa-hand-holding-dollar"></i> Covenant Stewardship</span>
+          <h2 class="section-title">Online Giving & Seed Sowing</h2>
+          <p class="section-subtitle">
+            <em>"Give, and it shall be given unto you; good measure, pressed down, and shaken together, and running over..."</em> — Luke 6:38
+          </p>
+        </div>
+
+        <div class="giving-wrapper">
+          
+          <!-- Left: Scriptural anchors & Interactive Tithe Calculator -->
+          <div class="giving-info">
+            <h3>Honour the Lord with Your Substance</h3>
+            <p>Every seed sown into the work of God at Living Faith Church Ibafo goes directly into winning souls, church growth, humanitarian benevolence, and maintaining the sanctuary of God.</p>
+            
+            <!-- Interactive Tithe Calculator Component -->
+            <div class="tithe-calculator-box glass-panel">
+              <div class="calculator-header">
+                <i class="fa-solid fa-calculator text-gold"></i>
+                <div>
+                  <h4>Interactive Tithe & Giving Calculator</h4>
+                  <span>Calculate your 10% tithe and structured offering</span>
+                </div>
+              </div>
+
+              <div class="calculator-inputs">
+                <div class="form-group">
+                  <label for="incomeInput">Enter Your Income / Inflow (₦ or $):</label>
+                  <div class="input-with-icon">
+                    <span class="currency-symbol">₦</span>
+                    <input type="number" id="incomeInput" placeholder="e.g. 100,000" min="0" />
+                  </div>
+                </div>
+
+                <div class="calc-results-grid" id="calcResults">
+                  <div class="calc-res-item featured">
+                    <span class="res-label">Covenant Tithe (10%):</span>
+                    <strong class="res-val" id="titheResult">₦0.00</strong>
+                  </div>
+                  <div class="calc-res-item">
+                    <span class="res-label">Worship Offering (Rec. 5%):</span>
+                    <strong class="res-val" id="offeringResult">₦0.00</strong>
+                  </div>
+                  <div class="calc-res-item">
+                    <span class="res-label">Project / Welfare Seed:</span>
+                    <strong class="res-val" id="projectResult">₦0.00</strong>
+                  </div>
+                </div>
+
+                <button class="btn btn-outline btn-sm btn-block mt-2" id="copyTitheSummaryBtn">
+                  <i class="fa-regular fa-copy"></i> Copy Giving Summary
+                </button>
+              </div>
+            </div>
+
+            <!-- USSD Quick Dial Ribbon -->
+            <div class="ussd-dial-box mt-3">
+              <h4><i class="fa-solid fa-mobile-screen-button text-gold"></i> Quick USSD Transfer Codes:</h4>
+              <div class="ussd-pills">
+                <button class="ussd-pill btn-copy" data-copy="*966*000*1013456789#" title="Copy Zenith USSD">
+                  <strong>Zenith:</strong> *966#
+                </button>
+                <button class="ussd-pill btn-copy" data-copy="*737*1*0123987456#" title="Copy GTBank USSD">
+                  <strong>GTB:</strong> *737#
+                </button>
+                <button class="ussd-pill btn-copy" data-copy="*901*0089123456#" title="Copy Access USSD">
+                  <strong>Access:</strong> *901#
+                </button>
+              </div>
+            </div>
+
+            <div class="giving-note-box mt-3">
+              <i class="fa-solid fa-circle-info"></i>
+              <span>Please add your purpose in transfer remarks (e.g. <em>Tithe, Offering, Project, Shiloh Sacrifice</em>).</span>
+            </div>
+          </div>
+
+          <!-- Bank Account Cards -->
+          <div class="giving-accounts">
+            
+            <!-- Account 1: Tithe & Offering -->
+            <div class="account-card">
+              <div class="account-header">
+                <div class="account-type"><i class="fa-solid fa-building-columns"></i> TITHE & WORSHIP OFFERING</div>
+                <span class="bank-name">Zenith Bank</span>
+              </div>
+              <div class="account-body">
+                <div class="account-name">LIVING FAITH CHURCH IBAFO</div>
+                <div class="account-number-row">
+                  <span class="account-number" id="accNumber1">1013456789</span>
+                  <button class="btn-copy" data-copy="1013456789" title="Copy Account Number">
+                    <i class="fa-regular fa-copy"></i> Copy
+                  </button>
+                </div>
+              </div>
+              <div class="account-footer">
+                <span>Direct Bank Transfer / USSD / NIP</span>
+              </div>
+            </div>
+
+            <!-- Account 2: Church Project / Building Fund -->
+            <div class="account-card">
+              <div class="account-header">
+                <div class="account-type"><i class="fa-solid fa-trowel-bricks"></i> CHURCH PROJECT / BUILDING FUND</div>
+                <span class="bank-name">Access Bank</span>
+              </div>
+              <div class="account-body">
+                <div class="account-name">LIVING FAITH CHURCH IBAFO (PROJECT)</div>
+                <div class="account-number-row">
+                  <span class="account-number" id="accNumber2">0089123456</span>
+                  <button class="btn-copy" data-copy="0089123456" title="Copy Account Number">
+                    <i class="fa-regular fa-copy"></i> Copy
+                  </button>
+                </div>
+              </div>
+              <div class="account-footer">
+                <span>Sanctuary Expansion & Facilities</span>
+              </div>
+            </div>
+
+            <!-- Account 3: Welfare & Shiloh Sacrifice -->
+            <div class="account-card">
+              <div class="account-header">
+                <div class="account-type"><i class="fa-solid fa-heart-pulse"></i> WELFARE & SHILOH SACRIFICE</div>
+                <span class="bank-name">GTBank (Guaranty Trust)</span>
+              </div>
+              <div class="account-body">
+                <div class="account-name">LIVING FAITH CHURCH IBAFO (WELFARE)</div>
+                <div class="account-number-row">
+                  <span class="account-number" id="accNumber3">0123987456</span>
+                  <button class="btn-copy" data-copy="0123987456" title="Copy Account Number">
+                    <i class="fa-regular fa-copy"></i> Copy
+                  </button>
+                </div>
+              </div>
+              <div class="account-footer">
+                <span>Community Benevolence & Sacrificial Giving</span>
+              </div>
+            </div>
+
+            <!-- Account 4: International Domiciliary (USD / GBP) -->
+            <div class="account-card dom-card">
+              <div class="account-header">
+                <div class="account-type"><i class="fa-solid fa-globe"></i> INTERNATIONAL / DOMICILIARY (USD & GBP)</div>
+                <span class="bank-name">Zenith Bank (Dom)</span>
+              </div>
+              <div class="account-body">
+                <div class="account-name">LIVING FAITH CHURCH IBAFO (USD DOM)</div>
+                <div class="account-number-row">
+                  <span class="account-number" id="accNumber4">5071239874</span>
+                  <button class="btn-copy" data-copy="5071239874" title="Copy USD Account">
+                    <i class="fa-regular fa-copy"></i> Copy USD
+                  </button>
+                </div>
+              </div>
+              <div class="account-footer">
+                <span>Wire Transfer / Diaspora Kingdom Partners</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIES OF TURNAROUNDS ===== -->
+    <section id="testimonies" class="section section-testimonies">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-star-of-life"></i> Signs & Wonders</span>
+          <h2 class="section-title">Testimonies of Divine Turnarounds</h2>
+          <p class="section-subtitle">What God has done for one, He is ready to do for all! Read how God is transforming lives at Living Faith Church Ibafo.</p>
+        </div>
+
+        <div class="testimonies-grid">
+          
+          <div class="testimony-card">
+            <div class="testimony-header">
+              <div class="testimony-avatar"><i class="fa-solid fa-user-check"></i></div>
+              <div>
+                <h4>Bro. Samuel A.</h4>
+                <span class="testimony-cat">Supernatural Job & Promotion</span>
+              </div>
+            </div>
+            <p class="testimony-text">
+              "After 3 years of unemployment, I engaged tirelessly in Covenant Hour of Prayer and kingdom advancement outreach as instructed from the altar. Within two weeks, I received an unannounced multi-national job offer with double my expected salary! God of Winners is real!"
+            </p>
+            <div class="testimony-footer">
+              <span class="testimony-date"><i class="fa-regular fa-calendar"></i> Sunday Thanksgiving</span>
+              <span class="testimony-verse">Psalm 126:1-3</span>
+            </div>
+          </div>
+
+          <div class="testimony-card">
+            <div class="testimony-header">
+              <div class="testimony-avatar"><i class="fa-solid fa-user-check"></i></div>
+              <div>
+                <h4>Sis. Comfort E.</h4>
+                <span class="testimony-cat">Instant Healing & Deliverance</span>
+              </div>
+            </div>
+            <p class="testimony-text">
+              "I suffered from severe chronic ulcer and hypertension for over 5 years. During the Feet Washing service at LFC Ibafo, the Pastor declared my total liberty. As I took the Holy Communion, the pain vanished permanently. Hospital reports now declare me 100% clean!"
+            </p>
+            <div class="testimony-footer">
+              <span class="testimony-date"><i class="fa-regular fa-calendar"></i> Midweek Communion</span>
+              <span class="testimony-verse">Jeremiah 30:17</span>
+            </div>
+          </div>
+
+          <div class="testimony-card">
+            <div class="testimony-header">
+              <div class="testimony-avatar"><i class="fa-solid fa-user-check"></i></div>
+              <div>
+                <h4>Mr. & Mrs. Oladipo</h4>
+                <span class="testimony-cat">Miracle Child After 6 Years</span>
+              </div>
+            </div>
+            <p class="testimony-text">
+              "Doctors had concluded that we could never conceive due to multiple complications. We stood on the prophetic word from Bishop Oyedepo and partook faithfully in our Sunday anointing services. Today, God has blessed our marriage with healthy twin boys!"
+            </p>
+            <div class="testimony-footer">
+              <span class="testimony-date"><i class="fa-regular fa-calendar"></i> Covenant Day of Fruitfulness</span>
+              <span class="testimony-verse">Exodus 23:26</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="testimony-action mt-5 text-center">
+          <button class="btn btn-primary btn-lg" id="shareTestimonyBtn">
+            <i class="fa-solid fa-pen-fancy"></i> Share Your Testimony
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== FIRST-TIME VISITOR PLANNER & FAQ ===== -->
+    <section id="visitor-guide" class="section section-visitor">
+      <div class="container">
+        
+        <div class="visitor-wrapper glass-panel">
+          
+          <div class="visitor-content">
+            <div class="section-header text-left">
+              <span class="section-badge"><i class="fa-solid fa-door-open"></i> First Time With Us?</span>
+              <h2 class="section-title">We Can't Wait to Welcome You!</h2>
+              <p class="section-subtitle">Visiting a new church can feel intimidating, but we promise you'll feel right at home the moment you walk through our doors.</p>
+            </div>
+
+            <!-- FAQ Accordion for Visitors -->
+            <div class="faq-list">
+              
+              <div class="faq-item active">
+                <button class="faq-question">
+                  <span>What should I expect during a service?</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                  <p>A typical service lasts around 90-100 minutes. You will experience vibrant, uplifting praise and worship, a life-transforming message from the Word of God, and specific prayers for supernatural breakthroughs.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>Is there provision for my children?</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                  <p>Yes! Our <strong>Kingdom Heritage Children Church</strong> and <strong>Teens Church</strong> provide secure, age-appropriate ministry where your children can learn God's Word, play, and make friends under the care of certified teachers.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>Is free church transportation available?</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                  <p>Yes, we provide free Sunday morning church buses across key junctions in Ibafo, Asese, Mowe, and Magboro. You can request a pickup location when planning your visit.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>What is the dress code?</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                  <p>Come as you are! Whether in formal attire, traditional African wear, or smart casual, you will be warmly embraced by our hospitable ushers and pastoral hosts.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Quick Plan Your Visit Booking Form -->
+          <div class="visitor-form-box">
+            <div class="form-header">
+              <h3><i class="fa-solid fa-id-card-clip"></i> Plan Your Visit</h3>
+              <p>Let us know you're coming so we can reserve a seat and VIP welcome gift for you!</p>
+            </div>
+            
+            <form id="planVisitForm">
+              <div class="form-group">
+                <label for="visitName">Full Name *</label>
+                <input type="text" id="visitName" required placeholder="Brother / Sister John Doe" />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="visitPhone">WhatsApp / Phone *</label>
+                  <input type="tel" id="visitPhone" required placeholder="080 1234 5678" />
+                </div>
+                <div class="form-group">
+                  <label for="visitService">Preferred Service *</label>
+                  <select id="visitService" required>
+                    <option value="">Select Service</option>
+                    <option value="Sunday 1st Service (6:30 AM)">Sunday 1st (6:30 AM)</option>
+                    <option value="Sunday 2nd Service (8:30 AM)">Sunday 2nd (8:30 AM)</option>
+                    <option value="Sunday 3rd Service (10:30 AM)">Sunday 3rd (10:30 AM)</option>
+                    <option value="Wednesday Midweek (6:00 PM)">Wednesday Midweek (6:00 PM)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="visitNeeds">Special Needs / Bringing Children?</label>
+                <select id="visitNeeds">
+                  <option value="Just me">Just me</option>
+                  <option value="Coming with Family & Kids">Coming with Family & Children</option>
+                  <option value="Need Free Bus Ride Pickup">Need Free Church Bus Pickup</option>
+                  <option value="Senior Citizen / Special Care">Senior Citizen / Special Care</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                <i class="fa-solid fa-paper-plane"></i> Confirm My Visit
+              </button>
+            </form>
+            <p id="planVisitStatus" class="form-feedback"></p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== CHURCH PHOTO GALLERY & LIGHTBOX ===== -->
+    <section id="gallery" class="section section-gallery">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-camera-retro"></i> Life in Pictures</span>
+          <h2 class="section-title">Church Media Gallery</h2>
+          <p class="section-subtitle">Glimpses of God's glory, vibrant worship, community outreach, and special celebrations at Living Faith Church Ibafo.</p>
+        </div>
+
+        <!-- Gallery Filter Tabs -->
+        <div class="gallery-filter-tabs" id="galleryFilterTabs">
+          <button class="filter-tab active" data-category="all">All Photos</button>
+          <button class="filter-tab" data-category="worship">Worship & Sanctuary</button>
+          <button class="filter-tab" data-category="youth">Youth & Teens</button>
+          <button class="filter-tab" data-category="ordinance">Holy Ordinances</button>
+          <button class="filter-tab" data-category="leadership">Leadership & WOFBI</button>
+          <button class="filter-tab" data-category="choir">Choir & Praise</button>
+        </div>
+
+        <!-- Gallery Grid (Loaded with real church photos) -->
+        <div class="gallery-grid" id="galleryGrid">
+          
+          <div class="gallery-item" data-category="worship">
+            <img src="images/altar.jpg" alt="Altar and Sanctuary of Living Faith Church Ibafo" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Altar & Sanctuary</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="worship">
+            <img src="images/church.jpg" alt="Congregation in Sunday Celebration Service" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Sunday Worship Encounter</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="ordinance">
+            <img src="images/communion.jpg" alt="Holy Communion Table & Elements" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Holy Communion Service</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="ordinance">
+            <img src="images/washing of feet.jpg" alt="Feet Washing Ordinance Service" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Washing of Feet Service</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="youth">
+            <img src="images/dance.jpg" alt="Youth Alive Fellowship Choreography & Drama" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Youth Drama & Dance Ministry</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="choir">
+            <img src="images/foren.jpg" alt="Winners Voice Church Choir" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Winners Voice Choir</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="choir">
+            <img src="images/praise.jpg" alt="High Praise and Thanksgiving Ministration" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">High Praise Ministration</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="choir">
+            <img src="images/bassist.jpg" alt="Live Instrumentation and Bassist" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Live Church Band & Bass</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="choir">
+            <img src="images/drummer.jpg" alt="Church Drummer in High Praise" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Sound of Worship & Drums</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="leadership">
+            <img src="images/graduation.jpg" alt="WOFBI Graduation Ceremony" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">WOFBI Leadership Graduation</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="leadership">
+            <img src="images/graduant.jpg" alt="WOFBI Bible Institute Graduands" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">WOFBI Bible Institute Graduands</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="leadership">
+            <img src="images/elder.jpg" alt="Pastoral Elders and Leaders in Prayer" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Pastoral Elders in Prayer</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="leadership">
+            <img src="images/dignitries.jpg" alt="Ministers and Dignitaries at Altar" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Special Ministers & Guests</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="youth">
+            <img src="images/teens church.jpg" alt="Teens Alive Congregation" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Teens Alive Sanctuary</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="youth">
+            <img src="images/rebot.jpg" alt="Kingdom Heritage Children Church" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Children Church Service</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="worship">
+            <img src="images/prayer.jpg" alt="Fervent Intercessory Prayer at CHOP" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Covenant Hour of Prayer</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="worship">
+            <img src="images/oyibo.jpg" alt="Prophetic Impartation Service" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Prophetic Impartation</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="worship">
+            <img src="images/goody.jpg" alt="Praise and Worship Encounter" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Deep Worship Encounter</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="worship">
+            <img src="images/testimony.jpg" alt="Testifier Sharing God's Goodness at Altar" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Testifier at the Altar</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="worship">
+            <img src="images/tithe.jpg" alt="Covenant Thanksgiving and Tithe Sowing" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Covenant Thanksgiving</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="worship">
+            <img src="images/worker.jpg" alt="Sanctuary Workers and Hospitality Protocol" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Sanctuary Hospitality Workers</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="worship">
+            <img src="images/front view.jpg" alt="Front Exterior View of Living Faith Church Ibafo" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Sanctuary Front Entrance</span>
+              <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== CONTACT & PRAYER REQUEST SECTION ===== -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        
+        <div class="contact-grid">
+          
+          <!-- Left: Church Contact & Coordinates -->
+          <div class="contact-info-card glass-panel">
+            <div class="section-header text-left">
+              <span class="section-badge"><i class="fa-solid fa-location-dot"></i> Get In Touch</span>
+              <h2 class="section-title">Connect With Us</h2>
+              <p class="section-subtitle">We are always here to listen, pray with you, and help you find your place in God's family.</p>
+            </div>
+
+            <div class="contact-methods">
+              
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                <div>
+                  <h4>Sanctuary Address</h4>
+                  <p>Lagos-Ibadan Expressway, Gideon Village, Ibafo, Ogun State, Nigeria.</p>
+                  <a href="https://maps.google.com/?q=Living+Faith+Church+Ibafo+Ogun+State" target="_blank" rel="noopener" class="map-link">
+                    <i class="fa-solid fa-diamond-turn-right"></i> Open in Google Maps
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                <div>
+                  <h4>Pastoral & Help Lines</h4>
+                  <p>+234 803 000 0000 | +234 812 000 0000</p>
+                  <span>Mon - Fri: 8:00 AM - 5:00 PM</span>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                <div>
+                  <h4>Email Enquiries</h4>
+                  <p>info@livingfaithibafo.org</p>
+                  <p>counseling@livingfaithibafo.org</p>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div>
+                  <h4>WhatsApp Pastoral Hotline</h4>
+                  <p>Chat with our pastoral team for 24/7 emergency prayers and guidance.</p>
+                  <a href="https://wa.me/2348030000000" target="_blank" rel="noopener" class="btn btn-outline btn-sm mt-2">
+                    <i class="fa-brands fa-whatsapp"></i> Start WhatsApp Chat
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Free Church Bus Routes -->
+            <div class="bus-routes-box mt-4">
+              <h4><i class="fa-solid fa-bus"></i> Free Sunday Bus Pickup Points</h4>
+              <p>Buses depart promptly at <strong>5:45 AM, 7:45 AM & 9:45 AM</strong> from:</p>
+              <div class="bus-pills">
+                <span>Ibafo Express Junction</span>
+                <span>Asese Bridge</span>
+                <span>Mowe Bus Stop</span>
+                <span>Magboro Under-bridge</span>
+                <span>Gideon Village Gate</span>
+                <span>Orimerunmu Axis</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: 24/7 Prayer Request & Contact Form -->
+          <div class="contact-form-card glass-panel">
+            <div class="tab-selectors" id="contactFormTabs">
+              <button class="form-tab active" data-tab="prayerTab"><i class="fa-solid fa-hands-praying"></i> Prayer Request</button>
+              <button class="form-tab" data-tab="generalTab"><i class="fa-solid fa-paper-plane"></i> General Enquiry</button>
+            </div>
+
+            <!-- Prayer Form -->
+            <div class="tab-panel active" id="prayerTab">
+              <h3>Submit a Confidential Prayer Request</h3>
+              <p>Our pastoral intercessory team prays over every request received with faith and the anointing.</p>
+              
+              <form id="prayerForm" class="church-form">
+                <div class="form-group">
+                  <label for="prayerName">Your Name</label>
+                  <input type="text" id="prayerName" placeholder="Full name (optional if anonymous)" />
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="prayerPhone">Phone Number / WhatsApp</label>
+                    <input type="tel" id="prayerPhone" placeholder="080..." />
+                  </div>
+                  <div class="form-group">
+                    <label for="prayerCategory">Prayer Category *</label>
+                    <select id="prayerCategory" required>
+                      <option value="Healing & Health">Healing & Health</option>
+                      <option value="Financial Breakthrough">Financial Breakthrough</option>
+                      <option value="Spiritual Growth & Deliverance">Spiritual Growth & Deliverance</option>
+                      <option value="Fruit of the Womb & Family">Fruit of the Womb & Family</option>
+                      <option value="Career, Business & Academics">Career, Business & Academics</option>
+                      <option value="Marital Settling">Marital Settling</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="prayerRequestText">Your Prayer Request *</label>
+                  <textarea id="prayerRequestText" rows="4" required placeholder="Describe your prayer need. Believe God for a supernatural answer!"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                  <i class="fa-solid fa-fire-flame-curved"></i> Submit Prayer Request
+                </button>
+              </form>
+              <p id="prayerStatus" class="form-feedback"></p>
+            </div>
+
+            <!-- General Contact Form -->
+            <div class="tab-panel" id="generalTab">
+              <h3>Send Us a Message</h3>
+              <p>Got questions regarding services, counseling, weddings, or WOFBI admission?</p>
+              
+              <form id="contactForm" class="church-form">
+                <div class="form-group">
+                  <label for="contactName">Your Name *</label>
+                  <input type="text" id="contactName" required placeholder="John Doe" />
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail">Email Address *</label>
+                  <input type="email" id="contactEmail" required placeholder="john@example.com" />
+                </div>
+                <div class="form-group">
+                  <label for="contactSubject">Subject</label>
+                  <input type="text" id="contactSubject" placeholder="Inquiry regarding..." />
+                </div>
+                <div class="form-group">
+                  <label for="contactMessage">Message *</label>
+                  <textarea id="contactMessage" rows="4" required placeholder="How can we help you?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                  <i class="fa-solid fa-paper-plane"></i> Send Message
+                </button>
+              </form>
+              <p id="formStatus" class="form-feedback"></p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== DELUXE LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog">
+    <div class="lightbox-stage">
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous Image"><i class="fa-solid fa-chevron-left"></i></button>
+      <div class="lightbox-img-wrap">
+        <img src="" alt="Enlarged church view" class="lightbox-img" />
+      </div>
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next Image"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+    <div class="lightbox-caption-bar">
+      <p id="lightboxCaption">Church Photograph</p>
+      <div class="lightbox-tools">
+        <span id="lightboxCounter">1 / 22</span>
+        <a href="#" download="church-photo.jpg" id="lightboxDownloadBtn" class="lightbox-tool-btn" title="Download High-Res Photo"><i class="fa-solid fa-download"></i></a>
+        <button id="lightboxCloseBtn" class="lightbox-tool-btn" aria-label="Close Lightbox"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FLOATING AUDIO PLAYER BAR ===== -->
+  <aside class="floating-audio-bar" id="floatingAudioBar" aria-label="Sermon Audio Player">
+    <div class="audio-inner container">
+      <div class="audio-info">
+        <i class="fa-solid fa-headphones-simple audio-pulse-icon"></i>
+        <div class="audio-text">
+          <strong id="audioTitle">Walking by Faith</strong>
+          <span id="audioSpeaker">Bishop David O. Oyedepo</span>
+        </div>
+      </div>
+      
+      <div class="audio-controls">
+        <button class="audio-btn" id="audioPrevBtn" title="Previous Sermon"><i class="fa-solid fa-backward-step"></i></button>
+        <button class="audio-btn audio-play-btn" id="audioPlayBtn" title="Play/Pause"><i class="fa-solid fa-play"></i></button>
+        <button class="audio-btn" id="audioNextBtn" title="Next Sermon"><i class="fa-solid fa-forward-step"></i></button>
+        <button class="audio-speed-btn" id="audioSpeedBtn" title="Change Playback Speed">1.0x</button>
       </div>
 
-      <div class="about-block">
-        <h2>✝️ Mission</h2>
-        <p>We are committed to:</p>
-        <ul>
-          <li>Preaching the undiluted Word of Faith that builds lives and transforms destinies.</li>
-          <li>Leading souls into a personal encounter with Jesus Christ — the source of true life.</li>
-          <li>Empowering believers through prayer, discipleship, and the anointing of the Holy Spirit.</li>
-          <li>Demonstrating God’s love through service, compassion, and community outreach.</li>
+      <div class="audio-progress-wrap">
+        <span class="audio-time" id="audioCurrentTime">0:00</span>
+        <div class="audio-scrubber" id="audioScrubber">
+          <div class="audio-progress" id="audioProgress"></div>
+        </div>
+        <span class="audio-time" id="audioTotalTime">42:15</span>
+      </div>
+
+      <div class="audio-actions">
+        <button class="audio-action-btn" id="audioVoiceReadBtn" title="Listen to Voice Summary (AI Reader)"><i class="fa-solid fa-volume-high"></i></button>
+        <button class="audio-action-btn" id="audioNotesBtn" title="View Scripture Notes"><i class="fa-solid fa-file-lines"></i></button>
+        <button class="audio-action-btn" id="audioCloseBtn" title="Close Player"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== MODALS ===== -->
+
+  <!-- Modal 0: Global Spotlight Search (Ctrl + K) -->
+  <div class="modal" id="globalSearchModal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog modal-search glass-panel">
+      <div class="spotlight-search-header">
+        <i class="fa-solid fa-magnifying-glass search-spotlight-icon"></i>
+        <input type="text" id="spotlightInput" placeholder="Type to search anything (sermons, giving, bus routes, scriptures, cell centers, pastor)..." autocomplete="off" />
+        <button class="modal-close" data-modal="globalSearchModal">&times;</button>
+      </div>
+      <div class="spotlight-search-body">
+        <div class="spotlight-quick-tags">
+          <span class="tag-title">Quick Jump:</span>
+          <button class="quick-tag-btn" data-query="giving">Online Giving</button>
+          <button class="quick-tag-btn" data-query="services">Service Times</button>
+          <button class="quick-tag-btn" data-query="bus">Bus Routes</button>
+          <button class="quick-tag-btn" data-query="cells">WSF Centers</button>
+          <button class="quick-tag-btn" data-query="healing">Healing Scriptures</button>
+          <button class="quick-tag-btn" data-query="tithe">Tithe Calculator</button>
+          <button class="quick-tag-btn" data-query="prayer">Prayer Request</button>
+        </div>
+        <div class="spotlight-results" id="spotlightResults">
+          <!-- Populated by script.js -->
+        </div>
+      </div>
+      <div class="spotlight-search-footer">
+        <span><kbd>ESC</kbd> to close</span>
+        <span><kbd>↑</kbd> <kbd>↓</kbd> to navigate</span>
+        <span><kbd>ENTER</kbd> to select</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 1: Join a Service Unit -->
+  <div class="modal" id="joinUnitModal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog glass-panel">
+      <div class="modal-header">
+        <h3 id="joinModalTitle"><i class="fa-solid fa-handshake-angle"></i> Join a Service Unit</h3>
+        <button class="modal-close" data-modal="joinUnitModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>In kingdom service lies your promotion and honor! Fill out your details below and our unit coordinator will reach out to you.</p>
+        <form id="joinUnitForm">
+          <div class="form-group">
+            <label for="joinName">Full Name *</label>
+            <input type="text" id="joinName" required placeholder="Your full name" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="joinPhone">Phone / WhatsApp *</label>
+              <input type="tel" id="joinPhone" required placeholder="080..." />
+            </div>
+            <div class="form-group">
+              <label for="joinUnitSelect">Selected Unit *</label>
+              <select id="joinUnitSelect" required>
+                <option value="Youth Alive Fellowship">Youth Alive Fellowship (YAF)</option>
+                <option value="Winners Voice Choir">Winners Voice Choir</option>
+                <option value="Kingdom Heritage Children">Kingdom Heritage Children</option>
+                <option value="Teens Alive">Teens Alive</option>
+                <option value="Sanctuary & Usheering">Sanctuary & Usheering</option>
+                <option value="Technical & Media">Technical & Media</option>
+                <option value="WOFBI Training">WOFBI Leadership Training</option>
+                <option value="Medical & Outreach">Medical & Outreach</option>
+                <option value="Believers Foundation Class">Believers Foundation Class (BFC)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="joinExperience">Prior Experience or Special Skills (Optional)</label>
+            <textarea id="joinExperience" rows="3" placeholder="e.g. Singing, guitar, camera handling, teaching, first aid..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fa-solid fa-check"></i> Submit Application
+          </button>
+        </form>
+        <p id="joinStatus" class="form-feedback"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Share Testimony -->
+  <div class="modal" id="testimonyModal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog glass-panel">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-star"></i> Share Your Testimony</h3>
+        <button class="modal-close" data-modal="testimonyModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Give glory to God for what He has done. Testimonies overcome the enemy and preserve your blessings (Revelation 12:11)!</p>
+        <form id="shareTestimonyForm">
+          <div class="form-group">
+            <label for="testifierName">Your Name *</label>
+            <input type="text" id="testifierName" required placeholder="Bro / Sis Full Name" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="testifierPhone">Phone Number *</label>
+              <input type="tel" id="testifierPhone" required placeholder="080..." />
+            </div>
+            <div class="form-group">
+              <label for="testimonyCategory">Category *</label>
+              <select id="testimonyCategory" required>
+                <option value="Supernatural Healing">Supernatural Healing</option>
+                <option value="Job & Career Miracle">Job & Career Miracle</option>
+                <option value="Miracle Conception / Child">Miracle Conception / Child</option>
+                <option value="Financial & Business Fortune">Financial & Business Fortune</option>
+                <option value="Deliverance & Protection">Deliverance & Protection</option>
+                <option value="Academic Distinction">Academic Distinction</option>
+                <option value="Other Testimony">Other Testimony</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="testimonyDetails">What Did God Do For You? *</label>
+            <textarea id="testimonyDetails" rows="5" required placeholder="Share brief background, what step of faith you took, and the supernatural result..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fa-solid fa-paper-plane"></i> Submit for Verification & Reading
+          </button>
+        </form>
+        <p id="testimonyStatus" class="form-feedback"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Live Video / DOMI Stream Player & Watch Party -->
+  <div class="modal" id="videoModal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog modal-lg glass-panel">
+      <div class="modal-header">
+        <div class="modal-header-live-badge">
+          <span class="pulse-red"></span>
+          <h3>Live Worship Stream & Watch Party</h3>
+        </div>
+        <button class="modal-close" data-modal="videoModal">&times;</button>
+      </div>
+      <div class="modal-body text-center">
+        <div class="video-container">
+          <iframe id="domiLiveIframe" src="https://www.youtube.com/embed/live_stream?channel=UCv-gWlq_u-X3R5wP1m44H4g" title="DOMI Stream Live Broadcast" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- Interactive Watch Party Reactions & Stats -->
+        <div class="watch-party-bar">
+          <div class="party-stats">
+            <span class="live-viewers-count"><i class="fa-solid fa-users text-gold"></i> <strong id="liveViewerCount">1,428</strong> Online Worshippers</span>
+          </div>
+
+          <div class="reaction-buttons-group">
+            <span class="reaction-label">Send Worship Reaction:</span>
+            <button class="reaction-btn" data-reaction="amen" title="Amen">🔥 Amen</button>
+            <button class="reaction-btn" data-reaction="glory" title="Glory to God">🙌 Glory</button>
+            <button class="reaction-btn" data-reaction="hallelujah" title="Hallelujah">❤️ Hallelujah</button>
+            <button class="reaction-btn" data-reaction="power" title="Power">⚡ Power</button>
+          </div>
+        </div>
+
+        <div class="stream-actions mt-3">
+          <a href="https://www.youtube.com/@DOMIStream" target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="fa-brands fa-youtube"></i> Open on YouTube Live
+          </a>
+          <a href="https://domionline.org" target="_blank" rel="noopener" class="btn btn-outline">
+            <i class="fa-solid fa-globe"></i> DOMI Radio / Stream
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Sermon Notes & Audio Voice Reader Modal -->
+  <div class="modal" id="sermonNotesModal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog glass-panel">
+      <div class="modal-header">
+        <h3 id="notesModalTitle"><i class="fa-solid fa-book-open"></i> Sermon Outline & Scriptures</h3>
+        <button class="modal-close" data-modal="sermonNotesModal">&times;</button>
+      </div>
+      <div class="modal-body" id="notesModalBody">
+        <p>Loading scripture outline...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Salvation Decision Prayer Modal -->
+  <div class="modal" id="salvationModal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog glass-panel">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-cross text-gold"></i> Prayer of Salvation</h3>
+        <button class="modal-close" data-modal="salvationModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="salvation-intro">
+          <p class="lead-text">If you want to accept Jesus Christ as your personal Lord and Saviour, pray this prayer out loud from the depth of your heart:</p>
+        </div>
+        
+        <div class="salvation-prayer-box">
+          <i class="fa-solid fa-quote-left text-gold mb-2"></i>
+          <p>
+            <em>"Lord Jesus, I come to You today. I acknowledge that I am a sinner and cannot save myself. I believe You died on the cross for my sins and rose again on the third day for my justification. Today, I confess You with my mouth as my Lord and personal Saviour. Wash away my sins with Your precious blood. Write my name in the Book of Life. Thank You Jesus for saving my soul. I am now born again, a child of God in Jesus' name. Amen!"</em>
+          </p>
+        </div>
+
+        <div class="salvation-form-wrap mt-3">
+          <h4>Did You Just Pray This Prayer? Let Us Welcome & Guide You!</h4>
+          <form id="salvationDecisionForm">
+            <div class="form-group">
+              <label for="salvName">Your Full Name *</label>
+              <input type="text" id="salvName" required placeholder="John Doe" />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="salvPhone">Phone / WhatsApp *</label>
+                <input type="tel" id="salvPhone" required placeholder="080..." />
+              </div>
+              <div class="form-group">
+                <label for="salvDecision">Decision Type *</label>
+                <select id="salvDecision">
+                  <option value="First Time Accepting Christ">First Time Accepting Christ</option>
+                  <option value="Rededication of Life">Rededication of Life</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fa-solid fa-dove"></i> Submit My Decision & Get Free Foundation Material
+            </button>
+          </form>
+          <p id="salvationStatus" class="form-feedback"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: Water & Holy Ghost Baptism Registration -->
+  <div class="modal" id="baptismModal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog glass-panel">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-water text-gold"></i> Water & Holy Ghost Baptism</h3>
+        <button class="modal-close" data-modal="baptismModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Water baptism is the biblical demonstration of your death to sin and resurrection into newness of life (Romans 6:4). Fill in your details below to join the upcoming baptismal service.</p>
+        
+        <form id="baptismForm">
+          <div class="form-group">
+            <label for="bapName">Your Name *</label>
+            <input type="text" id="bapName" required placeholder="Full Name" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bapPhone">WhatsApp Number *</label>
+              <input type="tel" id="bapPhone" required placeholder="080..." />
+            </div>
+            <div class="form-group">
+              <label for="bapType">Baptism Requested *</label>
+              <select id="bapType" required>
+                <option value="Water Immersion Baptism">Water Immersion Baptism</option>
+                <option value="Holy Ghost Baptism with Tongues">Holy Ghost Baptism (Speaking in Tongues)</option>
+                <option value="Both Water & Holy Ghost">Both Water & Holy Ghost Baptism</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="bapPrefDate">Preferred Date / Month</label>
+            <select id="bapPrefDate">
+              <option value="Next Upcoming Saturday">Next Upcoming Saturday (8:00 AM)</option>
+              <option value="End of the Month Service">End of the Month Service</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fa-solid fa-droplet"></i> Register for Baptism
+          </button>
+        </form>
+        <p id="baptismStatus" class="form-feedback"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 7: Event RSVP / Reminder Modal -->
+  <div class="modal" id="eventRsvpModal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog glass-panel">
+      <div class="modal-header">
+        <h3 id="rsvpModalTitle"><i class="fa-regular fa-bell"></i> Set Event Reminder</h3>
+        <button class="modal-close" data-modal="eventRsvpModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p id="rsvpEventSub">We'll send you an automated WhatsApp/SMS alert before the service begins.</p>
+        <form id="eventRsvpForm">
+          <input type="hidden" id="rsvpEventName" value="" />
+          <div class="form-group">
+            <label for="rsvpName">Your Name *</label>
+            <input type="text" id="rsvpName" required placeholder="Brother / Sister Name" />
+          </div>
+          <div class="form-group">
+            <label for="rsvpPhone">WhatsApp / Phone Number *</label>
+            <input type="tel" id="rsvpPhone" required placeholder="080 1234 5678" />
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fa-solid fa-check"></i> Confirm Reminder
+          </button>
+        </form>
+        <p id="rsvpStatus" class="form-feedback"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 8: Prophetic Declaration Generator Card -->
+  <div class="modal" id="propheticModal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog modal-prophetic glass-panel text-center">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-sparkles text-gold"></i> Prophetic Word for Your Day</h3>
+        <button class="modal-close" data-modal="propheticModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="prophetic-card-stage" id="propheticCardStage">
+          <div class="prophetic-crest">
+            <img src="winners-logo.svg" alt="Winners Crest" width="68" height="68" />
+          </div>
+          <span class="prophetic-stamp">PROPHETIC DECREE</span>
+          <h4 id="propheticDecreeTitle">Covenant Exemption & Supernatural Favor</h4>
+          <p class="prophetic-decree-text" id="propheticDecreeText">
+            "A thousand shall fall at thy side, and ten thousand at thy right hand; but it shall not come nigh thee. The Lord commands His blessing upon your going out and coming in today!"
+          </p>
+          <span class="prophetic-scripture-anchor" id="propheticAnchor">Psalm 91:7, Deuteronomy 28:6</span>
+        </div>
+
+        <div class="prophetic-modal-actions mt-4">
+          <button class="btn btn-primary btn-sm" id="drawAnotherWordBtn">
+            <i class="fa-solid fa-rotate"></i> Draw Another Word
+          </button>
+          <button class="btn btn-gold btn-sm" id="copyPropheticDecreeBtn">
+            <i class="fa-regular fa-copy"></i> Copy Decree
+          </button>
+          <a href="#" id="sharePropheticWhatsAppBtn" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+            <i class="fa-brands fa-whatsapp"></i> Share on Status
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Toast Notification -->
+  <div id="toast" class="toast" role="alert" aria-live="assertive">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span class="toast-message" id="toastMessage">Action completed successfully!</span>
+  </div>
+
+  <!-- Floating Quick Actions Speed Dial -->
+  <div class="floating-speed-dial" id="speedDial">
+    <div class="speed-dial-options" id="speedDialOptions">
+      <button class="dial-btn search" id="speedDialSearchBtn" title="Quick Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <a href="https://wa.me/2348030000000" target="_blank" rel="noopener" class="dial-btn whatsapp" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="#giving" class="dial-btn giving" title="Quick Give">
+        <i class="fa-solid fa-hand-holding-dollar"></i>
+      </a>
+      <a href="#contact" class="dial-btn prayer" title="Prayer Request">
+        <i class="fa-solid fa-hands-praying"></i>
+      </a>
+      <button class="dial-btn back-to-top" id="backToTopBtn" title="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+    <button class="dial-main-btn" id="dialMainBtn" aria-label="Quick actions menu">
+      <i class="fa-solid fa-plus"></i>
+    </button>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <img src="winners-logo.svg" alt="Winners Chapel Crest" width="52" height="52" />
+          <div>
+            <h3>Living Faith Church</h3>
+            <span>Ibafo • Ogun State</span>
+          </div>
+        </div>
+        <p class="footer-desc">
+          A branch of Living Faith Church Worldwide (Winners Chapel). Dedicated to spreading the Word of Faith and raising a people of dominion.
+        </p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://wa.me/2348030000000" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-nav">
+          <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+          <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> About Mandate</a></li>
+          <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Service Times</a></li>
+          <li><a href="#devotional"><i class="fa-solid fa-chevron-right"></i> Daily Devotional</a></li>
+          <li><a href="#events"><i class="fa-solid fa-chevron-right"></i> Prophetic Calendar</a></li>
+          <li><a href="#sermons"><i class="fa-solid fa-chevron-right"></i> Sermons Archive</a></li>
+          <li><a href="#wsf-cells"><i class="fa-solid fa-chevron-right"></i> WSF Home Cells</a></li>
+          <li><a href="#growth-track"><i class="fa-solid fa-chevron-right"></i> Growth Track</a></li>
+          <li><a href="#gallery"><i class="fa-solid fa-chevron-right"></i> Church Gallery</a></li>
         </ul>
       </div>
 
-      <div class="about-block">
-        <h2>🙌 Our Worship Experience</h2>
-        <p>Every service at Living Faith Church Ibafo is a refreshing encounter with God’s presence — filled with heartfelt worship, inspiring testimonies, and powerful teachings that ignite faith. Whether it’s a Sunday celebration, midweek Word encounter, or one of our special programs, you will always experience the atmosphere of God’s glory.</p>
+      <div class="footer-col">
+        <h4>Service Schedule</h4>
+        <ul class="footer-schedule">
+          <li><strong>Sunday 1st:</strong> 6:30 AM - 8:15 AM</li>
+          <li><strong>Sunday 2nd:</strong> 8:30 AM - 10:15 AM</li>
+          <li><strong>Sunday 3rd:</strong> 10:30 AM - 12:15 PM</li>
+          <li><strong>Wednesday Midweek:</strong> 6:00 PM</li>
+          <li><strong>WSF Home Cells:</strong> Saturday 5:00 PM</li>
+          <li><strong>Covenant Hour of Prayer:</strong> 6:00 AM (Mon-Sat)</li>
+        </ul>
       </div>
 
-      <div class="about-block">
-        <h2>❤️ A Place for You</h2>
-        <p>No matter who you are or where you come from, there’s a place for you here. Our arms are open wide to welcome you into a loving community that believes in you, prays for you, and walks with you as you fulfill your divine destiny. At Living Faith Church Ibafo, you will discover purpose, experience transformation, and find your home in God’s kingdom.</p>
-        <p class="bible-verse">✨ “For whatsoever is born of God overcometh the world: and this is the victory that overcometh the world, even our faith.” — 1 John 5:4</p>
+      <div class="footer-col">
+        <h4>Location & Contact</h4>
+        <address class="footer-address">
+          <p><i class="fa-solid fa-location-dot"></i> Lagos-Ibadan Expressway, Gideon Village, Ibafo, Ogun State.</p>
+          <p><i class="fa-solid fa-phone"></i> +234 803 000 0000</p>
+          <p><i class="fa-solid fa-envelope"></i> info@livingfaithibafo.org</p>
+        </address>
+        
+        <div class="footer-verse-banner">
+          <em>“For whatsoever is born of God overcometh the world: and this is the victory that overcometh the world, even our faith.”</em>
+          <strong>— 1 John 5:4</strong>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>&copy; <span id="year"></span> Living Faith Church Ibafo (Winners Chapel). All rights reserved.</p>
+        <p class="media-credit">Designed & Powered with <i class="fa-solid fa-heart text-red"></i> by Living Faith Ibafo Media Team</p>
       </div>
     </div>
-  </section>
-
-  <!-- ===== MINISTRIES ===== -->
-  <section id="ministries" class="section fade-in">
-    <div class="container">
-      <h2>Our Ministries</h2>
-      <div class="grid">
-        <div class="card">Youth Alive</div>
-        <div class="card">Children’s Ministry</div>
-        <div class="card">Choir Practice</div>
-        <div class="card">Mid-Week Service</div>
-        <div class="card">Medical Outreach</div>
-        <div class="card">Fitness Programme</div>
-        <div class="card">Prayer Reboot</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== GALLERY ===== -->
-  <section id="gallery" class="section fade-in">
-    <div class="container">
-      <h2>Church Gallery</h2>
-      <div class="gallery-grid">
-          <img src="images/altar.jpg" alt="Second Sunday Service">
-      <img src="images/church.jpg" alt="Youth Outreach">
-      <img src="images/communion.jpg" alt="Holy Communion Service">
-      <img src="images/elder.jpg" alt="Prayer Session">
-      <img src="images/goody.jpg" alt="Praise and Worship">
-      <img src="images/graduant.jpg" alt="Graduation Ceremony">
-      <img src="images/graduation.jpg" alt="Graduands">
-      <img src="images/oyibo.jpg" alt="Prayer Session">
-      <img src="images/pastor.jpg" alt="Pst Babatunde Olaitan">
-      <img src="images/banner.jpg" alt="Thanksgiving Sunday">
-        <img src="images/bassist.jpg" alt="Instrumentalist Worship">
-      <img src="images/dance.jpg" alt="Youth Outreach">
-      <img src="images/foren.jpg" alt="Choir Worship">
-      <img src="images/front view.jpg" alt="Prayer Session">
-      <img src="images/front view.jpg" alt="Children Ministry">
-      <img src="images/genarator.jpg" alt="Thanksgiving Sunday">
-      <img src="images/praise.jpg" alt="Choir Worship">
-      <img src="images/prayer.jpg" alt="Prayer Session">
-      <img src="images/rebot.jpg" alt="Children Ministry">
-      <img src="images/teens church.jpg" alt="Thanksgiving Sunday">
-      <img src="images/testimony.jpg" alt="Thanksgiving Sunday">
-      <img src="images/tithe.jpg" alt="Choir Worship">
-      <img src="images/washing of feet.jpg" alt="Prayer Session">
-      <img src="images/worker.jpg" alt="Thanksgiving Sunday">
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== LIGHTBOX ===== -->
-  <div id="lightbox" class="lightbox">
-    <span class="close-lightbox">&times;</span>
-    <span class="lightbox-prev">&#10094;</span>
-    <span class="lightbox-next">&#10095;</span>
-    <img class="lightbox-img" alt="Expanded Church Image" />
-    <p class="lightbox-caption"></p>
-  </div>
-
-  <!-- ===== SERMONS ===== -->
-  <section id="sermons" class="section fade-in">
-    <div class="container">
-      <h2>Latest Sermons</h2>
-      <div class="grid" id="sermonGrid"></div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="section fade-in">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form id="contactForm">
-        <input type="text" placeholder="Name" required />
-        <input type="email" placeholder="Email" required />
-        <textarea placeholder="Message" required></textarea>
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
-      <p id="formStatus" class="muted"></p>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <img src="winners.jpeg" alt="logo" />
-    <p>© <span id="year"></span> Living Faith Church Ibafo. All rights reserved.</p>
-    <p>Lagos Ibadan Expressway, Gideon Village, Ibafo, Ogun State</p>
   </footer>
 
+  <!-- Main JavaScript File -->
   <script src="script.js"></script>
 </body>
 </html>
